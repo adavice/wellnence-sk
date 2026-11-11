@@ -1,0 +1,1782 @@
+
+
+Pasted text(20261111-173613).txt
+Document
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>Zrušiť členstvo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+  <script type="text/javascript">
+    function clickLogin(myOpen) {
+      if (document.getElementsByTagName("header").length) {
+        var obj = document.getElementsByTagName("header")[0];
+        var obj2 = document.getElementsByClassName("userButton");
+        if (!myOpen && obj2.length) {
+          obj2[0].getElementsByClassName("open").length &&
+            (obj2[0].getElementsByClassName("open")[0].style.display = myOpen
+              ? "none"
+              : "block");
+          obj2[0].getElementsByClassName("close").length &&
+            (obj2[0].getElementsByClassName("close")[0].style.display = myOpen
+              ? "block"
+              : "none");
+        }
+        myOpen
+          ? (obj.style.border = "none")
+          : (obj.style.borderBottom = "1px solid #eaecf0");
+        ["login", "authorized"].forEach(function (val) {
+          obj.getElementsByClassName(val).length &&
+            (obj.getElementsByClassName(val)[0].style.display = myOpen
+              ? "block"
+              : "none");
+        });
+        obj.getElementsByClassName("container").length &&
+          (obj.getElementsByClassName("container")[0].style.height = myOpen
+            ? "auto"
+            : "100px");
+        obj.getElementsByClassName("search").length &&
+          (obj.getElementsByClassName("search")[0].style.display = myOpen
+            ? "none"
+            : "flex");
+        if (myOpen && obj2.length) {
+          obj2[0].getElementsByClassName("open").length &&
+            (obj2[0].getElementsByClassName("open")[0].style.display = myOpen
+              ? "none"
+              : "block");
+          obj2[0].getElementsByClassName("close").length &&
+            (obj2[0].getElementsByClassName("close")[0].style.display = myOpen
+              ? "block"
+              : "none");
+        }
+      }
+    }
+  </script>
+
+  <body cz-shortcut-listen="true">
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NHFKN3C"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <div class="wrapper">
+      <div id="warning">
+        <div class="container">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 24 24"
+              style="enable-background: new 0 0 24 24"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z"
+                ></path>
+              </g>
+            </svg>
+            Máte problém? <a href="./contactUs.html">Kontaktujte nás</a></span
+          >
+        </div>
+      </div>
+      <header>
+        <div class="container">
+          <a href="index.html" class="logo"
+            ><img src="imgs/logo.png" alt=""
+          /></a>
+          <div class="search" style="display: flex">
+            <form id="searchForm">
+              <input
+                type="search"
+                id="search"
+                placeholder="Vyhľadať recept"
+                name="search"
+                value=""
+                maxlength="15"
+              />
+              <input type="submit" value="" />
+            </form>
+          </div>
+
+          <button class="userButton">
+            <svg
+              class="open"
+              onclick="clickLogin(true);"
+              height="512pt"
+              viewBox="0 0 512 512"
+              width="512pt"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0"
+              ></path>
+            </svg>
+            <svg
+              class="close"
+              onclick="clickLogin(false);"
+              viewBox="0 0 512 512"
+              width="512pt"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0"
+              />
+              <path
+                d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0"
+              />
+              <path
+                d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0"
+              />
+            </svg>
+          </button>
+          <ul class="headerMenu">
+            <li>
+              <a href="index.html">Recepty</a>
+            </li>
+            <li>
+              <a href="articles.html">Články</a>
+            </li>
+            <li>
+              <a href="calculator.html">Kalkulačka kalórií</a>
+            </li>
+            <li>
+              <a href="mealplan.html">Jedálniček</a>
+            </li>
+            <li>
+              <a href="cancel.html">Zrušiť členstvo</a>
+            </li>
+          </ul>
+          <div class="login">
+            <form
+              id="authenticationForm"
+              action="index.html?page="
+              method="post"
+            >
+              <!--<input type="hidden" name="page" value="">-->
+              <input
+                type="text"
+                id="userName"
+                name="u"
+                value=""
+                placeholder="Používateľské meno"
+                maxlength="22"
+              />
+              <input
+                type="password"
+                id="userPassword"
+                name="c"
+                placeholder="Heslo"
+                maxlength="12"
+              />
+              <input
+                type="submit"
+                id="authentication"
+                value="Prihlásiť sa"
+                name="authentication"
+              />
+              <a href="" id="signIn">Zaregistrovať sa</a>
+              <div class="getPremium">
+                <span class="text">Nemáte účet?</span>
+                <a href="" class="getAccess">Získať prístup k Premium</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="title">
+          <h1>Automatické zrušenie členstva</h1>
+          <div class="line"></div>
+        </section>
+        <div class="container cancel title">
+          <p>
+            Predplatné na wellnence.com môžete zrušiť
+            <b>BEZPLATNE</b> prostredníctvom našej online služby.
+          </p>
+          <p>Ak chcete zrušiť predplatné, využite jednu z dvoch možností uvedených nižšie.</p>
+          <p>
+            Ak máte ďalšie otázky, kontaktujte nás na adrese
+            <b>
+              <a href="mailto:support@wellnence.com"
+                >support@wellnence.com</a
+              ></b
+            >
+            <br />
+            Náš pracovník podpory vám odpovie čo najskôr, zvyčajne do
+            <b>24 hodín</b> (okrem víkendov a sviatkov).
+          </p>
+          <p>
+            Naše centrum podpory je k dispozícii od pondelka do piatka
+            od 7.00 do 16.00 GMT.
+          </p>
+          <div class="greyPlate">
+            <h3>Ako zrušiť predplatné</h3>
+            <div
+              class="col-md-12 contact-right-ltpwr framed"
+              style="margin: auto; float: none"
+            >
+              <p class="form_descr" style="text-align: center">
+                Zadajte e-mailovú adresu a heslo, ktoré ste použili pri registrácii.
+              </p>
+              <form id="home-option1-form" role="form" method="post">
+                <input type="hidden" name="page" value="cancel" /><input
+                  type="hidden"
+                  name="method"
+                  value="1"
+                />
+                <div class="row">
+                  <div class="row">
+                    <div class="form-group col-sm-4">
+                      <div>
+                        <input
+                          type="email"
+                          class="form-control required input form-input"
+                          name="home-option1-email-input"
+                          id="home-option1-email-input"
+                          placeholder="E-mail"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <div>
+                        <input
+                          type="password"
+                          class="form-control required input form-input"
+                          name="home-option1-password-input"
+                          id="home-option1-password-input"
+                          placeholder="Heslo"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <div class="form-group-submit-btn">
+                        <button
+                          id="home-option1-submit-btn"
+                          type="submit"
+                          class="btn btn-primary button"
+                        >
+                          Zrušiť predplatné
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="clearfix"></div>
+            <h3 style="margin: 20px auto 20px; display: none;">alebo</h3>
+            <div
+              class="col-md-12 contact-right-ltpwr framed"
+              style="margin: auto; float: none; display: none;"
+            >
+              <p class="form_descr" style="text-align: center; max-width: 90%">
+                Ak ste stratili prihlasovacie údaje, zadajte prvých 6 a posledné 4
+                číslice z čísla svojej kreditnej karty.
+              </p>
+              <form id="home-option2-form" role="form" method="post">
+                <input type="hidden" name="page" value="cancel" /><input
+                  type="hidden"
+                  name="method"
+                  value="2"
+                />
+                <div class="row">
+                  <div class="row">
+                    <div class="form-group col-sm-3" id="cc-6-num-container">
+                      <div>
+                        <input
+                          type="text"
+                          maxlength="6"
+                          class="form-control required input form-input cc-nums"
+                          name="home-option2-6-ccnum-input"
+                          id="home-option2-6-ccnum-input"
+                          placeholder="xxxxxx"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-2" id="cc-middle-numbers-container">
+                      <p id="cc-middle-numbers" class="cc-nums">xxxxxx</p>
+                    </div>
+                    <div class="form-group col-sm-3">
+                      <div>
+                        <input
+                          type="text"
+                          maxlength="4"
+                          class="form-control required input form-input cc-nums"
+                          name="home-option2-4-ccnum-input"
+                          id="home-option2-4-ccnum-input"
+                          placeholder="xxxx"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <div class="form-group-submit-btn">
+                        <button
+                          id="home-option2-submit-btn"
+                          type="submit"
+                          class="btn btn-primary button"
+                        >
+                          Zrušiť predplatné
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="clearfix" style="display: none;"></div>
+          </div>
+          <div class="greyPlate" style="display: none;">
+            <h3>Ako obnoviť heslo</h3>
+            <div
+              class="col-md-12 contact-right-ltpwr framed"
+              style="margin: auto; float: none"
+            >
+              <p class="form_descr" style="text-align: center; max-width: 90%">
+                Zadajte e-mailovú adresu, ktorú ste použili pri vytvorení predplatného.
+                Heslo vám automaticky pošleme e-mailom.
+              </p>
+              <form id="home-option3-form" role="form" method="post">
+                <input type="hidden" name="page" value="cancel" /><input
+                  type="hidden"
+                  name="method"
+                  value="3"
+                />
+                <div class="row">
+                  <div class="col-lg-8 col-sm-8">
+                    <div class="form-group">
+                      <div>
+                        <input
+                          type="email"
+                          class="form-control required input form-input"
+                          pattern=".{6,}"
+                          name="home-option3-email-input"
+                          id="home-option3-email-input"
+                          placeholder="E-mail"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="form-group form-group-submit-btn">
+                      <button
+                        id="home-option3-submit-btn"
+                        type="submit"
+                        class="btn btn-primary button"
+                      >
+                        Obnoviť heslo
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <section class="ft-main">
+          <div class="ft-main-item side footer-menu">
+            <h2 class="ft-title">Menu</h2>
+            <ul>
+              <li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+              <li><a href="/?page=terms">Obchodné podmienky</a></li>
+              <li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+            </ul>
+          </div>
+
+          <div class="ft-main-item" id="main-item">
+            <a href="/" class="logo"><img src="imgs/logo.png" alt="" /></a>
+          </div>
+
+          <div class="ft-main-item side footer-contact">
+            <h2 class="ft-title">Kontaktujte nás</h2>
+            <ul>
+              <li>
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  height="20"
+                  width="20"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <polygon
+                        points="339.392,258.624 512,367.744 512,144.896 "
+                      ></polygon>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <polygon
+                        points="0,144.896 0,367.744 172.608,258.624 "
+                      ></polygon>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+                <a href="mailto:support@wellnence.com">support@wellnence.com</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <p>© 2024 wellnence.com. Všetky práva vyhradené.</p>
+      </footer>
+    </div>
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
+
+
+Pasted text(20261111-173922).txt
+Document
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Kalkulačka</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+    <link href="css/responsive-tables.css" type="text/css" media="screen" rel="stylesheet" />
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="warning">
+            <div class="container">
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+                            </path>
+                        </g>
+                    </svg> Máte problém? <a href="./contactUs.html">Kontaktujte nás</a></span>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Vyhľadať recept" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+                        
+                    </form>
+
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recepty</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Články</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Kalkulačka kalórií</a>
+                    </li>
+                    <li>
+                        <a href="mealplan.html">Jedálniček</a>
+                    </li>
+                    <li>
+                        <a href="cancel.html">Zrušiť členstvo</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="Používateľské meno" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Heslo" maxlength="12">
+                        <input type="submit" id="authentication" value="Prihlásiť sa" name="authentication">
+                        <a href="" id="signIn">Zaregistrovať sa</a>
+                        <div class="getPremium">
+                            <span class="text">Nemáte účet?</span>
+                            <a href="" class="getAccess">Získať prístup k Premium</a>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </header>
+        <main>
+            <section class="contactForm calc">
+                <div class="container">
+                    <div class="contactBox">
+                        <h2>Kalkulačka kalórií</h2>
+                        <div id="main">
+                            <!-- ALTERNATE WINDOW -->
+                            <div class="login__alternate">
+                                <span>Ak chcete používať kalkulačku, prihláste sa a získajte prístup. </span>
+                                <a href="">Získať prístup k Premium</a>
+                            </div>
+
+                            <!--  CALCULATOR -->
+                            <div id="form01">
+                                <section class="page-heading">
+                                    <h2>Kalkulačka BMR, TDEE a cieľového príjmu kalórií</h2>
+                                    <p>Vypočítajte si bazálny metabolizmus (BMR) a celkový denný energetický výdaj
+                                        (TDEE). Zistite, aký príjem kalórií zodpovedá vášmu cieľu schudnúť,
+                                        pribrať alebo si udržať hmotnosť.</p>
+                                </section>
+                                <section class="calorie-targets">
+                                    <form id="calorieTargetForm">
+                                        <fieldset>
+                                            <div class="form-group"><label for="calorieTargetWeight">Hmotnosť</label>
+                                                <input type="number" min="50" max="1000" id="calorieTargetWeight"
+                                                    name="weight" value="225"> <select id="calorieTargetWeightUnit">
+                                                    <option selected="selected" value="Imperial">lb</option>
+                                                    <option value="Metric">kg</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group"><label for="calorieTargetHeight">Výška</label>
+                                                <input type="number" min="30" max="250" id="calorieTargetHeight"
+                                                    name="height" value="66"> <select id="calorieTargetHeightUnit">
+                                                    <option selected="selected" value="Imperial">palce</option>
+                                                    <option value="Metric">cm</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group"><label for="calorieTargetAge">Vek</label> <input
+                                                    type="number" min="1" max="100" id="calorieTargetAge" name="age"
+                                                    value="30"></div>
+                                            <div class="form-group"><label for="calorieTargetActivityLevel">Úroveň
+                                                    aktivity</label> <select id="calorieTargetActivityLevel">
+                                                    <option selected="selected" value="sedentary"
+                                                        title="Minimálna alebo žiadna fyzická aktivita">
+                                                        Sedavý spôsob života</option>
+                                                    <option value="light" title="Ľahké cvičenie 1 až 3 dni v týždni">
+                                                        Nízka aktivita</option>
+                                                    <option value="moderate"
+                                                        title="Cvičenie strednej intenzity 6 až 7 dní v týždni">Stredná aktivita
+                                                    </option>
+                                                    <option value="very"
+                                                        title="Intenzívne cvičenie každý deň alebo viac tréningov denne">
+                                                        Vysoká aktivita</option>
+                                                    <option value="extra"
+                                                        title="Intenzívne cvičenie aspoň dvakrát denne alebo niekoľko hodín kardia strednej intenzity každý deň">
+                                                        Veľmi vysoká aktivita</option>
+                                                </select></div>
+                                            <div class="form-group"><label for="calorieTargetGender">Pohlavie</label>
+                                                <select id="calorieTargetGender">
+                                                    <option selected="selected" value="male">Muž</option>
+                                                    <option value="female">Žena</option>
+                                                    <option value="neutral">Neutrálne</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group"><label for="calorieTargetWeightGoal">Cieľ
+                                                    hmotnosti</label> <select id="calorieTargetWeightGoal">
+                                                    <option selected="selected" value="loseQuickly">Rýchlo schudnúť (-500
+                                                        kcal)</option>
+                                                    <option value="loseSlowly">Pomaly schudnúť (-250 kcal)</option>
+                                                    <option value="maintain">Udržať si hmotnosť (+/- 0 kcal)</option>
+                                                    <option value="gainSlowly">Pomaly pribrať (+250 kcal)</option>
+                                                    <option value="gainQuickly">Rýchlo pribrať (+500 kcal)</option>
+                                                </select></div>
+                                            <div class="btn-group">
+                                                <button type="submit" class="btn-primary cal_buttons" onclick="show()">Vypočítať</button>
+                                                <button type="reset" id="calorieTargetFormReset"
+                                                    class="btn-secondary cal_buttons" onclick="hide()">Obnoviť pôvodné hodnoty</button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <div id="calorieTargetResult"></div>
+                                    <a id="recipes_link" href="https://wellnence.com/?cal=100">ZOBRAZIŤ RECEPTY</a>
+                                    <div id="multipliersDiv">
+                                        <p>TDEE a cieľový príjem kalórií podľa BMR</p>
+                                        <table class="responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">BMR</th>
+                                                    <th scope="col">Koeficient</th>
+                                                    <th scope="col">Udržanie hmotnosti</th>
+                                                    <th scope="col">Rýchle chudnutie</th>
+                                                    <th scope="col">Pomalé chudnutie</th>
+                                                    <th scope="col">Pomalé priberanie</th>
+                                                    <th scope="col">Rýchle priberanie</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td title="Sedavý spôsob života">1.2</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td title="Nízka aktivita">1.375</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td title="Stredná aktivita">1.55</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td title="Vysoká aktivita">1.725</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td title="Veľmi vysoká aktivita">1.9</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                            </div>
+                            <button type="submit" class="meal-btn save" >Uložiť</button>
+                            <div class="clear"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="ft-main ">
+                <div class="ft-main-item side footer-menu">
+                    <h2 class="ft-title">Menu</h2>
+                    <ul>
+                        <li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+                        <li><a href="/?page=terms">Obchodné podmienky</a></li>
+                        <li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+                    </ul>
+                </div>
+
+                <div class="ft-main-item" id="main-item">
+                    <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+                   
+                    
+                </div>
+
+                <div class="ft-main-item side footer-contact">
+                    <h2 class="ft-title">Kontaktujte nás</h2>
+                    <ul>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="mailto:support@wellnence.com">support@wellnence.com</a>
+                        </li>
+                  
+                        
+                    </ul>
+                </div>
+            </section>
+            <p>© 2024 wellnence.com. Všetky práva vyhradené.</p>
+        </footer>
+    </div>
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/calc.js"></script>
+    <script type="text/javascript" src="js/responsive-tables.js"></script>
+</body>
+
+</html>
+
+
+Pasted text(20261111-174243).txt
+Document
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Recepty Wellnence</title>
+    <link rel="shortcut icon" href="imgs/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="css/open_sans.css">
+    <link rel="stylesheet" href="css/playfair.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <style>
+        main .slider .img1 {
+            background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img2 {
+            background: url(https://photos.bigoven.com/recipe/hero/simple-fondant-potatoes.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img3 {
+            background: url(https://photos.bigoven.com/recipe/hero/tomato-basil-dip.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+    <script type="text/javascript">
+        function clickLogin(myOpen) {
+            if (document.getElementsByTagName('header').length) {
+                var obj = document.getElementsByTagName('header')[0];
+                var obj2 = document.getElementsByClassName('userButton');
+                if (!myOpen && obj2.length) {
+                    obj2[0].getElementsByClassName('open').length && (obj2[0].getElementsByClassName('open')[0].style.display = myOpen ? 'none' : 'block');
+                    obj2[0].getElementsByClassName('close').length && (obj2[0].getElementsByClassName('close')[0].style.display = myOpen ? 'block' : 'none');
+                }
+                myOpen ? (obj.style.border = 'none') : (obj.style.borderBottom = '1px solid #eaecf0');
+                ['login', 'authorized'].forEach(function (val) { obj.getElementsByClassName(val).length && (obj.getElementsByClassName(val)[0].style.display = myOpen ? 'block' : 'none'); });
+                obj.getElementsByClassName('container').length && (obj.getElementsByClassName('container')[0].style.height = myOpen ? 'auto' : 'unset');
+                obj.getElementsByClassName('search').length && (obj.getElementsByClassName('search')[0].style.display = myOpen ? 'none' : 'flex');
+                if (myOpen && obj2.length) {
+                    obj2[0].getElementsByClassName('open').length && (obj2[0].getElementsByClassName('open')[0].style.display = myOpen ? 'none' : 'block');
+                    obj2[0].getElementsByClassName('close').length && (obj2[0].getElementsByClassName('close')[0].style.display = myOpen ? 'block' : 'none');
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="warning">
+            <div class="container">
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+                            </path>
+                        </g>
+                    </svg> Máte problém? <a href="./contactUs.html">Kontaktujte nás</a></span>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Vyhľadať recept" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+                        
+                    </form>
+
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recepty</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Články</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Kalkulačka kalórií</a>
+                    </li>
+                    <li>
+                        <a href="mealplan.html">Jedálniček</a>
+                    </li>
+                    <li>
+                        <a href="cancel.html">Zrušiť členstvo</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="Používateľské meno" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Heslo" maxlength="12">
+                        <input type="submit" id="authentication" value="Prihlásiť sa" name="authentication">
+                        <a href="" id="signIn">Zaregistrovať sa</a>
+                        <div class="getPremium">
+                            <span class="text">Nemáte účet?</span>
+                            <a href="" class="getAccess">Získať prístup k Premium</a>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </header>
+        <main class="articles">
+
+            <section class="title">
+                <h1>Obľúbené články</h1>
+                <div class="line"></div>
+            </section>
+            <section class="container">
+                <div class="set">
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/wellness.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>5 TRENDOV V OBLASTI WELLNESS, KTORÉ UVIDÍTE TENTO ROK </h3>
+                            <p></p>
+                            <a href="article_read_1.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/coconut.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>ZÁZRAKY KOKOSOVÉHO OLEJA</h3>
+                            <p></p>
+                            <a href="article_read_2.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/water.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>ROVNOVÁHA TEKUTÍN V TELE A VÝZNAM DOSTATOČNEJ HYDRATÁCIE</h3>
+                            <p></p>
+                            <a href="article_read_3.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/limited%20budget.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>TIPY NA ZDRAVÉ STRAVOVANIE S OBMEDZENÝM ROZPOČTOM</h3>
+                            <p></p>
+                            <a href="article_read_4.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/intuitive.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>STRUČNÝ SPRIEVODCA INTUITÍVNYM STRAVOVANÍM</h3>
+                            <p></p>
+                            <a href="article_read_5.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/serving_size.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>AKO ODMERAŤ VEĽKOSŤ PORCIÍ</h3>
+                            <p></p>
+                            <a href="article_read_6.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/healthy_lifestyle.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>5 TIPOV NA ZDRAVÝ ŽIVOTNÝ ŠTÝL</h3>
+                            <p></p>
+                            <a href="article_read_7.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/anti-stress.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>5 POTRAVÍN PROTI STRESU, KTORÉ VÁM MÔŽU ZLEPŠIŤ NÁLADU</h3>
+                            <p></p>
+                            <a href="article_read_8.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/live_longer.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>9 PRAVIDIEL STRAVOVANIA, KTORÉ VÁM POMÔŽU ŽIŤ DLHŠIE</h3>
+                            <p></p>
+                            <a href="article_read_9.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/sleep.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>AKO MAŤ KAŽDÝ DEŇ DOSTATOK SPÁNKU? </h3>
+                            <p></p>
+                            <a href="article_read_10.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/lemon.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>AKO CITRÓNOVÁ KÔRA PROSPIEVA TELU</h3>
+                            <p></p>
+                            <a href="article_read_11.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/coffee.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>5 ÚČINNÝCH SPÔSOBOV, AKO SA POVZBUDIŤ AJ BEZ KÁVY </h3>
+                            <p></p>
+                            <a href="article_read_12.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/waking_up_early.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>7 JEDNODUCHÝCH TIPOV, AKO VSTÁVAŤ SKORO RÁNO</h3>
+                            <p></p>
+                            <a href="article_read_13.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/bedtime.jpg" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>JEDLO PRED SPANÍM</h3>
+                            <p></p>
+                            <a href="article_read_14.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <section class="ft-main ">
+                <div class="ft-main-item side footer-menu">
+                    <h2 class="ft-title">Menu</h2>
+                    <ul>
+                        <li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+                        <li><a href="/?page=terms">Obchodné podmienky</a></li>
+                        <li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+                    </ul>
+                </div>
+    
+                <div class="ft-main-item" id="main-item">
+                    <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+                  
+                    
+                </div>
+    
+                <div class="ft-main-item side footer-contact">
+                    <h2 class="ft-title">Kontaktujte nás</h2>
+                    <ul>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            <a href="mailto:support@wellnence.com">support@wellnence.com</a>
+                        </li>
+                     
+                    </ul>
+                </div>
+            </section>
+            <p>© 2024 wellnence.com. Všetky práva vyhradené.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/index.js?"></script>
+</body>
+
+</html>
+
+
+<section>
+    <header><span></span></header>
+    <main>
+        <img src="" alt="">
+        <h2></h2>
+        <p></p>
+        <a href="" class="button"></a>
+    </main>
+</section>
+
+
+Pasted text(20261111-174723).txt
+Document
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Recepty Wellnence</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="css/open_sans.css">
+    <link rel="stylesheet" href="css/playfair.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <style>
+        main .slider .img1 {
+            background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img2 {
+            background: url(https://photos.bigoven.com/recipe/hero/simple-fondant-potatoes.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img3 {
+            background: url(https://photos.bigoven.com/recipe/hero/tomato-basil-dip.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="warning">
+            <div class="container">
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+                            </path>
+                        </g>
+                    </svg> Máte problém? <a href="./contactUs.html">Kontaktujte nás</a></span>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Vyhľadať recept" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+                        
+                    </form>
+
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recepty</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Články</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Kalkulačka kalórií</a>
+                    </li>
+                    <li>
+                        <a href="mealplan.html">Jedálniček</a>
+                    </li>
+                    <li>
+                        <a href="cancel.html">Zrušiť členstvo</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="Používateľské meno" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Heslo" maxlength="12">
+                        <input type="submit" id="authentication" value="Prihlásiť sa" name="authentication">
+                        <a href="" id="signIn">Zaregistrovať sa</a>
+                        <div class="getPremium">
+                            <span class="text">Nemáte účet?</span>
+                            <a href="" class="getAccess">Získať prístup k Premium</a>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </header>
+        <main class="articles read">
+
+            <section class="title">
+                <h1 class="underline">JEDLO PRED SPANÍM</h1>
+            </section>
+            <section class="container">
+                <div class="article_block">
+                    <div class="article_illustration">
+                        <img src="imgs/articles/bedtime.jpg" alt="">
+                    </div>
+                    <p>Dlho sa považovalo za nesporné, že jesť v noci je nevhodné,
+                        pretože to vážne škodí organizmu a urýchľuje starnutie.
+
+                    </p>
+                    <p> Plnohodnotnú večeru býva ťažké stihnúť najmä vtedy, keď vám to pracovný rozvrh nedovoľuje
+                        a z práce sa vraciate domov príliš neskoro. Aj vtedy sa však dá nájsť riešenie. Stojí to však za námahu?
+                        A je nočné jedenie naozaj také škodlivé?</p>
+                    <h3>Aké riziká prináša jedenie v noci?</h3>
+                    <p>Hlad večer a v noci, najmä počas spánku, prispieva k regenerácii organizmu.
+                        Cez deň bráni spusteniu tohto procesu jedlo aj stres. Ak večeriame neskoro,
+                        telu nedáme priestor na regeneráciu.</p>
+                    <p>Jedenie v noci spomaľuje tvorbu melatonínu, ktorý navodzuje spánok.
+                        Ak teda večeriame neskoro, ťažšie zaspávame.</p>
+                    <p>Pri večernom hlade začne telo využívať vlastné tukové zásoby a šetrí pritom
+                        glukózu. Jedenie v noci vám zasa môže ľahko pridať niekoľko
+                        pravdepodobne zbytočných kíl navyše.</p>
+                    <p>Najčastejšie vynechávame večeru z týchto dôvodov:<br>
+                        aby sme sa cítili dobre,<br>
+                        aby sme dobre spali,<br>
+                        aby sme schudli alebo aspoň nepribrali.<br>
+                    </p>
+                    <p>To by sa, samozrejme, nemalo vzťahovať na deti, ktoré potrebujú jesť aj pred spaním,
+                        ani na mladých ľudí do 23 rokov, ktorých organizmus sa ešte vyvíja a rastie.</p>
+                    <p>Ak sa vás ani jeden z týchto troch dôvodov na vynechanie večere netýka,
+                        prečo sa nenavečerať, ak máte chuť?</p>
+                    <h3>Čo je najlepšie jesť na večeru?</h3>
+                    <p>Ak nemáte sklon k nadváhe, ľahko stráviteľné potraviny s vysokým glykemickým indexom vám na večeru
+                        môžu dokonca pomôcť zaspať. Vyhnite sa však alkoholu
+                        a nápojom s obsahom kofeínu.</p>
+                    <p>Glykemický index je číslo od jeden do sto, ktoré vyjadruje, ako rýchlo sa vstrebávajú
+                        sacharidy z potravín. Potraviny s vysokým glykemickým indexom sú prospešné aj večer, ľahko
+                        sa trávia a nebránia rýchlemu zaspávaniu. Dokonca urýchľujú tvorbu serotonínu,
+                        ktorý prispieva k ospalosti. Takéto jedlá večer podporujú tvorbu melatonínu a serotonínu,
+                        hormónov navodzujúcich spánok, uvoľňujú napäté svaly, upokojujú nervy
+                        a nezaťažujú žalúdok.</p>
+                    <p>Na potraviny s vysokým glykemickým indexom by si mali dávať pozor iba ľudia s cukrovkou alebo obezitou.
+                        Pre nich je teda jedenie v noci škodlivé.
+                    </p>
+                    <p>Najvyšší glykemický index má glukóza, a to 100. Vysoký glykemický index majú aj tieto potraviny:
+                        <li>
+                            <ul>palacinky a biely chlieb,</ul>
+                            <ul>hnedá ryža,</ul>
+                            <ul>pečené zemiaky alebo zemiaková kaša z varených zemiakov,</ul>
+                            <ul>varená mrkva a tekvica,</ul>
+                            <ul>med, banány, hrozienka, kivi a sladkosti.</ul>
+                        </li>
+                    </p>
+                    <p>Dať si môžete aj zeleninové jedlá s ľahkým bielym vínom.
+
+                        Pred spaním môže upokojiť teplé mlieko. Vhodný je aj kefír, oreganový nálev
+                        alebo harmančekový čaj s medom.
+                    </p>
+                    <h3>Ako zvládnuť chuť do jedla?</h3>
+                    <p>Večer zvyčajne pociťujete väčší hlad než cez deň. Prejedaniu sa však
+                        treba vyhnúť.</p>
+                    <p>1. Večer sa telo preladí na tvorbu zásob a začne si ukladať energiu z jedla. Pár hodín
+                        po večeri sa opäť objaví chuť na niečo pod zub. Preto večer jedzte viackrát
+                        po menších dávkach. Pred odchodom z práce si dajte jogurt alebo tvaroh.
+                        Doma si potom vypite harmančekový čaj s medom a o pol hodiny si dajte večeru,
+                        napríklad palacinky alebo zemiakovú kašu s kefírom.</p>
+                    <p>2. Striedajte jedlá a skúšajte nové kombinácie chutí. Budete jesť pomalšie
+                        a pocit sýtosti sa dostaví skôr.</p>
+                    <p>3. Pätnásť minút pred večerou vypite pohár teplej vody. Môžete si dať aj pohár kefíru
+                        alebo slabý čaj s mliekom. Džús vynechajte, pretože povzbudzuje tvorbu žalúdočných štiav.
+                    </p>
+                    <p>4. Nejedzte maškrty nalačno ani ako samostatné jedlo. Najprv sa najedzte
+                        ako zvyčajne a na záver si pomaly vychutnajte malú porciu maškrty.
+                        Z takejto malej porcie by ste nemali pribrať.</p>
+                    <p> 5. Deň začnite plnohodnotnými raňajkami a nevynechávajte obed.
+                        Večer potom nebudete mať potrebu doháňať zameškané.</p>
+                    <p>6. Večer často jeme len z nudy. Raz si uvaríme čaj, inokedy si dáme niečo pod zub.
+                        Aj keď je večerné maškrtenie príjemné, skúste sa venovať iným činnostiam,
+                        ktoré vás bavia a sú užitočné.
+                    </p>
+                    <p> 7. Nízkokalorické potraviny a zeleninu uložte v chladničke na viditeľné miesto. Zvyšok
+                        odložte bokom a sľúbte si, že ho zjete až ráno. Ráno sa sotva prinútite zjesť
+                        všetko, čo ste odložili, takže si niečo budete môcť vziať
+                        do práce.</p>
+                    <p> 8. Aromaterapia pomáha zvládnuť hlad.</p>
+                    <p> Odporúčajú sa vône škorice, mäty, zeleného jablka a vanilky. Esenciálne oleje možno nanášať
+                        na pokožku alebo vdychovať. Zapchajte si jednu nosovú dierku a druhou sa zhlboka
+                        nadýchnite. Potom strany vymeňte. Vdychovanie týchto vôní môže pomôcť pri psychickom hlade,
+                        keď chuť na jedlo vyvolá už samotný pohľad na lákavý pokrm. V takom prípade môže vôňa
+                        esenciálneho oleja pomôcť zahnať chuť na jedlo.</p>
+                    <p>
+                        Stačí si aj privoňať k pomarančovej alebo mandarínkovej šupke.
+                    </p>
+                    <p> 9. Obyčajný smäd si často mýlime s hladom. Zelený či bylinkový čaj alebo paradajková šťava
+                        rýchlo zmiernia pocit hladu.</p>
+                    <p> 10. Hneď po večeri si umyte zuby, aby ste si vytvorili návyk.
+                        Po umytí zubov už nejedzte.</p>
+
+
+
+                </div>
+                <aside>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/coconut.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>ZÁZRAKY KOKOSOVÉHO OLEJA</h3>
+                            <a href="article_read_2.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/limited%20budget.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>TIPY NA ZDRAVÉ STRAVOVANIE S OBMEDZENÝM ROZPOČTOM</h3>
+                            <a href="article_read_4.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/serving_size.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>AKO ODMERAŤ VEĽKOSŤ PORCIÍ</h3>
+                            <a href="article_read_6.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/live_longer.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>9 PRAVIDIEL STRAVOVANIA, KTORÉ VÁM POMÔŽU ŽIŤ DLHŠIE</h3>
+                            <a href="article_read_9.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+        </main>
+        <footer>
+            <section class="ft-main ">
+                <div class="ft-main-item side footer-menu">
+                    <h2 class="ft-title">Menu</h2>
+                    <ul>
+                        <li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+                        <li><a href="/?page=terms">Obchodné podmienky</a></li>
+                        <li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+                    </ul>
+                </div>
+    
+                <div class="ft-main-item" id="main-item">
+                    <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+                 
+                </div>
+    
+                <div class="ft-main-item side footer-contact">
+                    <h2 class="ft-title">Kontaktujte nás</h2>
+                    <ul>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            <a href="mailto:support@wellnence.com">support@wellnence.com</a>
+                        </li>
+                   
+                    </ul>
+                </div>
+            </section>
+            <p>© 2024 wellnence.com. Všetky práva vyhradené.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/index.js?"></script>
+</body>
+
+</html>
+
+
+Pasted text(20261111-175216).txt
+Document
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Recepty Wellnence</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="css/open_sans.css">
+    <link rel="stylesheet" href="css/playfair.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <style>
+        main .slider .img1 {
+            background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img2 {
+            background: url(https://photos.bigoven.com/recipe/hero/simple-fondant-potatoes.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img3 {
+            background: url(https://photos.bigoven.com/recipe/hero/tomato-basil-dip.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="warning">
+            <div class="container">
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+                            </path>
+                        </g>
+                    </svg> Máte problém? <a href="./contactUs.html">Kontaktujte nás</a></span>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Vyhľadať recept" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+                        
+                    </form>
+
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recepty</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Články</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Kalkulačka kalórií</a>
+                    </li>
+                    <li>
+                        <a href="mealplan.html">Jedálniček</a>
+                    </li>
+                    <li>
+                        <a href="cancel.html">Zrušiť členstvo</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="Používateľské meno" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Heslo" maxlength="12">
+                        <input type="submit" id="authentication" value="Prihlásiť sa" name="authentication">
+                        <a href="" id="signIn">Zaregistrovať sa</a>
+                        <div class="getPremium">
+                            <span class="text">Nemáte účet?</span>
+                            <a href="" class="getAccess">Získať prístup k Premium</a>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </header>
+        <main class="articles read">
+
+            <section class="title">
+                <h1 class="underline">7 JEDNODUCHÝCH TIPOV, AKO VSTÁVAŤ SKORO RÁNO</h1>
+            </section>
+            <section class="container">
+                <div class="article_block">
+                    <div class="article_illustration">
+                        <img src="imgs/articles/waking_up_early.png" alt="">
+                    </div>
+                    <p>Niektorí ľudia sú zvyknutí byť čulí už od rána. Iní bývajú najaktívnejší až popoludní.
+                        Spánok sa podobne ako väčšina procesov v našom tele riadi návykmi. Sme nastavení na určité
+                        činnosti a reakcie.
+                    </p>
+                    <p>Hlboko zakorenené vzorce správania formujú prevažnú väčšinu našich každodenných činností
+                        aj ich výsledky.</p>
+                    <p>Človek je jediný tvor v prírode, ktorý dokáže sám meniť svoje návyky. Zvieratá ani rastliny
+                        to nedokážu. Pravda, ani človeku sa to nepodarí vždy. Dokáže to ten, kto je ochotný
+                        veriť, že zmena je možná, a pustiť sa do nej.</p>
+
+                    <h3>AKO SA NAUČIŤ SKORO VSTÁVAŤ? PRAKTICKÝ POSTUP</h3>
+                    <h3>1. Ak chcete vstávať skoro, choďte skoro spať. Záleží na tom, koľko spíte.
+                    </h3>
+                    <p>Podľa väčšiny zdrojov je pre zdravého dospelého človeka optimálnych 8 hodín spánku.
+                        Pri bežnej únave 9 hodín, pri chorobe 10 hodín a po veľkej fyzickej alebo psychickej
+                        záťaži 12 hodín.</p>
+                    <p>Hovorí sa, že človeku môže dlhodobo stačiť 6 hodín spánku. Možno, ak sú telo aj nervová
+                        sústava v ideálnom stave a máte navyše niečo, čo vás poháňa. Možno ste zamilovaní,
+                        naplno vás pohltil náročný projekt, máte veľmi malé dieťa alebo sa deje niečo iné,
+                        čo vás drží v napätí. Vtedy môžete spať málo a necítiť únavu. Spravidla je to však
+                        dočasné a je lepšie na to dlhodobo nespoliehať.</p>
+                    <h3>2. Prvý mesiac sa obrňte trpezlivosťou</h3>
+                    <p>Ak ste zvyknutí ponocovať a chcete začať vstávať skoro, začiatky budú náročné.
+                        Treba to len vydržať. Telo si zvykne oveľa rýchlejšie, než sa zdá.</p>
+                    <p>Ako sa naučiť chodiť skoro spať, keď sa vám vôbec nechce spať?</p>
+                    <p>Prinúťte sa vstávať skoro.</p>
+                    <p>Ak tri dni po sebe vstanete o šiestej ráno alebo v inom čase, ktorý je pre vás skorý,
+                        a cez deň vydržíte, na štvrtý deň vás medzi 22. a 23. hodinou premôže spánok.
+                        Keďže pôjdete spať skôr, ľahšie sa vám bude aj vstávať. Tak sa nový režim upevní
+                        a pomaly sa z vás stáva ranné vtáča. Gratulujeme!</p>
+                    <h3>3. Nastavte si dva budíky a položte ich ďalej od postele.</h3>
+                    <p>Budíky položte mimo dosahu, nastavte nepríjemný zvuk a nechajte medzi zvoneniami
+                        päťminútový odstup. Je to jednoduchá rada, ale funguje celkom dobre, ak sa naozaj
+                        chcete naučiť vstávať skoro.</p>
+                    <h3>4. Hneď po zobudení si pustite hudbu.</h3>
+                    <h3>5. Aspoň 3 hodiny pred spaním nejedzte.</h3>
+                    <p>Nezaťažujte žalúdok a črevá trávením jedla. Bude sa vám ľahšie zaspávať a lepšie spať.
+                        Ak teraz pravidelne jedávate pred spaním, aj to je návyk. Skúste aspoň týždeň,
+                        ideálne mesiac, fungovať inak. Rozdiel pocítite na spánku, celkovej pohode
+                        aj na vzhľade.</p>
+                    <h3>6. Zaveďte si ranné rituály.</h3>
+                    <p>Vypite pohár vody, umyte si tvár a zacvičte si pri hudbe. Ospalosť pominie alebo
+                        bude aspoň slabšia ako pred pätnástimi minútami. Urobte si z týchto činností návyk.
+                        Zdravé ranné rituály vám pomôžu dobre začať deň a zdravé dni tvoria zdravý život.</p>
+                    <p>Ak sa nedokážete odtrhnúť od postele, pretože sa vôbec nestotožňujete s tým, ako teraz
+                        žijete, ide o iný problém. Budíky ani podobné rady vám vtedy nepomôžu. Najprv si
+                        musíte ujasniť, čo vám v súčasnom živote nesedí, a potom ho postupne zmeniť,
+                        nech to stojí akékoľvek úsilie.</p>
+
+                </div>
+                <aside>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/coconut.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>ZÁZRAKY KOKOSOVÉHO OLEJA</h3>
+                            <a href="article_read_2.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/limited%20budget.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>TIPY NA ZDRAVÉ STRAVOVANIE S OBMEDZENÝM ROZPOČTOM</h3>
+                            <a href="article_read_4.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/serving_size.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>AKO ODMERAŤ VEĽKOSŤ PORCIÍ</h3>
+                            <a href="article_read_6.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/live_longer.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>9 PRAVIDIEL STRAVOVANIA, KTORÉ VÁM POMÔŽU ŽIŤ DLHŠIE</h3>
+                            <a href="article_read_9.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </main>
+        <footer>
+            <section class="ft-main ">
+                <div class="ft-main-item side footer-menu">
+                    <h2 class="ft-title">Menu</h2>
+                    <ul>
+                        <li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+                        <li><a href="/?page=terms">Obchodné podmienky</a></li>
+                        <li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+                    </ul>
+                </div>
+    
+                <div class="ft-main-item" id="main-item">
+                    <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+                 
+                </div>
+    
+                <div class="ft-main-item side footer-contact">
+                    <h2 class="ft-title">Kontaktujte nás</h2>
+                    <ul>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            <a href="mailto:support@wellnence.com">support@wellnence.com</a>
+                        </li>
+                     
+                    </ul>
+                </div>
+            </section>
+            <p>© 2024 wellnence.com. Všetky práva vyhradené.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/index.js?"></script>
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Obchodné podmienky</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+
+<body class="terms">
+	<div class="wrapper">
+		<div id="warning">
+			<div class="container">
+				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+						id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+						xml:space="preserve">
+						<g>
+							<path
+								d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+							</path>
+						</g>
+					</svg> Máte problém? <a href="./contactUs.html">Kontaktujte nás</a></span>
+			</div>
+		</div>
+		<header>
+			<div class="container">
+				<a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+				<div class="search" style="display: flex;">
+					<form id="searchForm">
+						<input type="search" id="search" placeholder="Vyhľadať recept" name="search" value=""
+							maxlength="15">
+						<input type="submit" value="">
+
+					</form>
+
+				</div>
+
+
+				<button class="userButton">
+					<svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+						</path>
+					</svg>
+					<svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+						<path
+							d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+						<path
+							d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+					</svg>
+				</button>
+				<ul class="headerMenu">
+					<li>
+						<a href="index.html">Recepty</a>
+					</li>
+					<li>
+						<a href="articles.html">Články</a>
+					</li>
+					<li>
+						<a href="calculator.html">Kalkulačka kalórií</a>
+					</li>
+                    <li>
+                        <a href="mealplan.html">Jedálniček</a>
+                    </li>
+					<li>
+						<a href="cancel.html">Zrušiť členstvo</a>
+					</li>
+				</ul>
+				<div class="login">
+					<form id="authenticationForm" action="index.html?page=" method="post">
+						<!--<input type="hidden" name="page" value="">-->
+						<input type="text" id="userName" name="u" value="" placeholder="Používateľské meno" maxlength="22">
+						<input type="password" id="userPassword" name="c" placeholder="Heslo" maxlength="12">
+						<input type="submit" id="authentication" value="Prihlásiť sa" name="authentication">
+						<a href="" id="signIn">Zaregistrovať sa</a>
+						<div class="getPremium">
+							<span class="text">Nemáte účet?</span>
+							<a href="" class="getAccess">Získať prístup k Premium</a>
+						</div>
+					</form>
+				</div>
+
+
+			</div>
+
+		</header>
+		<main class="policy_terms terms container">
+			<section class="title">
+				<h1 class="title">Všeobecné obchodné podmienky</h1>
+			</section>
+			<article>
+
+				<p>Vitajte na webovej stránke Wellnence na adrese www.wellnence.com (ďalej len „Webová stránka“).
+					Pozorne si prečítajte tieto všeobecné obchodné podmienky (ďalej len „Podmienky“).
+					Po začatí poskytovania Služieb, na ktoré sa vzťahuje táto zmluva, ich môžete zrušiť len spôsobom
+					uvedeným v týchto Podmienkach. Ak s Podmienkami nesúhlasíte, nepokračujte v používaní Webovej stránky
+					ani v registrácii a nepokúšajte sa získať prístup k Službám, na ktoré sa Podmienky vzťahujú, ani ich používať.
+					Ak budete pokračovať, súhlasíte s používaním Služieb za podmienok uvedených v tejto zmluve.
+					Tieto Podmienky môžeme z času na čas zmeniť v súlade s ich ustanoveniami.
+					Webovú stránku navštevujte pravidelne, pretože vás tu budeme informovať o všetkých takýchto zmenách.</p>
+			</article>
+			<article>
+				<h3>1. OPIS A DRUHY SLUŽIEB</h3>
+				<p>Wellnence (ďalej len „Spoločnosť“ alebo „my“) poskytuje rozmanitý zábavný obsah na podporu
+					zdravého životného štýlu. Patrí sem ponuka receptov, článkov a interaktívnych funkcií, ktoré vás
+					majú zaujať, vzdelávať a zabávať. Objavte svet chutí prostredníctvom našej zbierky receptov.
+					Wellnence môže ponúkať aj zdroje, ktoré vám pomôžu robiť informované rozhodnutia o vlastnom zdraví
+					a pohode. Usilujeme sa poskytovať presné a aktuálne informácie. Obsah je určený na informačné
+					a zábavné účely. </p>
+				<p>Služby vám sprístupňujeme za podmienok uvedených v týchto Podmienkach. Služby zahŕňajú prístup
+					k informáciám, údajom, textom, softvéru, hudbe, zvuku, fotografiám, grafike, videám, správam alebo
+					iným materiálom. Služby nie sú určené na poskytovanie daňového, účtovného ani právneho poradenstva,
+					poradenstva o vhodnosti či výnosnosti cenných papierov alebo investícií, zdravotného či lekárskeho
+					poradenstva ani iného poradenstva osobného alebo súkromného charakteru. Služby môžu zahŕňať aj prístup
+					k obsahu a službám nezávislých tretích strán. Po riadnej registrácii a úhrade budete môcť Služby
+					používať prostredníctvom kompatibilných mobilných telefónov a iných kompatibilných zariadení.
+					Spoločnosť ponúka Služby formou priebežného predplatného. Pokiaľ nie je výslovne uvedené inak,
+					informácie uvedené v Službách alebo v súvislosti s nimi sa považujú za výzvu na objednanie Služieb
+					a nemajú povahu záväznej ponuky Spoločnosti. Spoločnosť má právo poskytovať Služby spôsobom, ktorý
+					považuje za najvhodnejší, pričom sa bude usilovať zachovať aspoň úroveň Služieb ku dňu uzavretia
+					zmluvy podľa týchto Podmienok. S výhradou vášho práva na vrátenie poplatkov podľa týchto Podmienok
+					si Spoločnosť vyhradzuje právo upraviť Služby, ktoré vám poskytuje, alebo ich poskytovanie dočasne
+					či trvalo ukončiť. Ak poskytovanie Služby trvalo ukončíme, budeme vás o tom informovať.</p>
+				<h3>2. REGISTRÁCIA A VŠEOBECNÝ PRÍSTUP K SLUŽBÁM</h3>
+				<p>Ak si chcete predplatiť ktorúkoľvek zo Služieb, musíte mať aspoň osemnásť rokov. Ak nie ste osobou
+					zodpovednou za úhradu účtu za mobilný telefón alebo internet alebo ak máte menej ako osemnásť rokov,
+					pred objednaním predplatného a/alebo využívaním Služieb si vyžiadajte súhlas platiteľa účtu, rodičov,
+					zákonného zástupcu a/alebo zamestnávateľa podľa toho, čo sa na vás vzťahuje. Objednaním predplatného
+					a/alebo využívaním Služieb (1) beriete na vedomie a potvrdzujete, že ste v prípade potreby získali
+					potrebné povolenie, súhlas alebo schválenie od platiteľa účtu, rodičov, zákonného zástupcu alebo
+					zamestnávateľa, a (2) potvrdzujete, že ste mali možnosť prečítať si a prijať Podmienky pred použitím
+					Služieb. Ak s Podmienkami nesúhlasíte, Služby nepoužívajte. Registráciou do Služby a/alebo jej
+					používaním beriete na vedomie a potvrdzujete, že ste prijali tieto Podmienky a spĺňate vyššie uvedené
+					požiadavky, ktoré sa na vás vzťahujú. Súhlasíte s tým, že každá osoba, ktorá o takéto Služby požiada,
+					je vaším zástupcom s plným oprávnením konať vo vašom mene v súvislosti s týmito Službami. Pokiaľ
+					nie je výslovne uvedené inak, tieto Podmienky sa vzťahujú aj na všetky nové alebo dodatočné funkcie,
+					ktoré rozširujú alebo zlepšujú existujúce Služby, vrátane uvedenia nových Služieb.</p>
+			</article>
+			<article>
+				<h3>3. POVINNOSŤ REGISTRÁCIE A OSOBNÉ ÚDAJE</h3>
+				<p> Na vašu žiadosť vás môže Spoločnosť zaregistrovať ako používateľa a umožniť vám prístup k Službám
+					pridelením osobného používateľského mena a hesla. Za zachovanie dôvernosti hesla a údajov o účte
+					zodpovedáte výlučne vy. Spoločnosť si vyhradzuje právo zmeniť používateľské mená pridelené pre
+					niektoré časti Služieb. Ak bude takáto zmena potrebná, budeme vás o nej informovať. V záujme
+					bezpečného používania Služieb a úhrady príslušných poplatkov sa zaväzujete, že osobné informácie
+					uvedené v registračnom formulári (ďalej len „Osobné údaje“) budú vždy správne a úplné.
+					Ak sa Spoločnosť podľa vlastného uváženia domnieva, že Osobné údaje sú nepresné alebo neúplné,
+					môže pozastaviť alebo zrušiť váš účet a zamedziť súčasnému aj budúcemu používaniu Služieb alebo
+					ktorejkoľvek ich časti. Zodpovedáte za zachovanie dôvernosti všetkých hesiel a/alebo účtov,
+					ktoré vám Spoločnosť pridelila, a nesiete plnú zodpovednosť za všetky úkony vykonané s použitím
+					vášho hesla alebo účtu. Zaväzujete sa kontaktovať Spoločnosť, ak zistíte alebo máte podozrenie,
+					že niekto neoprávnene použil vaše heslo alebo účet alebo že bezpečnosť či ochrana Osobných údajov
+					už nie je zaručená z iného dôvodu. Spoločnosť nenesie zodpovednosť za žiadnu stratu ani škodu,
+					ktorá vznikne v dôsledku nedodržania tohto článku z vašej strany. Spoločnosť vám môže umožniť
+					prístup k niektorým Službám aj bez registrácie používateľského účtu, napríklad ak si Služby
+					aktivujete prostredníctvom mobilného telefónu. V takom prípade vás identifikujeme prostriedkami,
+					ktoré považujeme za vhodné, napríklad podľa vášho mobilného telefónneho čísla. Súhlasíte so
+					zhromažďovaním takýchto údajov, ich sprístupnením Spoločnosti a ich používaním v súlade
+					s článkom „Ochrana súkromia a spracúvanie údajov“ týchto Podmienok.</p>
+			</article>
+			<article>
+				<h3>4. PRÍSTUP K SLUŽBÁM FORMOU PRIEBEŽNÉHO PREDPLATNÉHO</h3>
+				<p>Priebežné predplatné sa začína, keď vám Spoločnosť na vašu žiadosť sprístupní Služby.
+					Prístup k Službám vám môžeme poskytnúť dodaním informačných alebo zábavných Služieb, napríklad
+					poskytnutím obsahu, ako sú recepty a články, alebo iným spôsobom, napríklad prostredníctvom
+					vášho mobilného telefónneho čísla. Všetky zmluvy o predplatnom zostávajú v platnosti až do ich
+					ukončenia a/alebo zrušenia z vašej strany alebo zo strany Spoločnosti v súlade s týmito Podmienkami.
+					Zmluvy o službách Spoločnosti a nezávislých tretích strán, ktoré sú sprístupnené prostredníctvom
+					Služieb, nadobúdajú účinnosť, keď Spoločnosť alebo príslušná tretia strana prijme vašu objednávku
+					alebo vám podľa nej poskytne príslušné služby. Zmluva zostáva v platnosti až do jej ukončenia
+					z vašej strany alebo zo strany Spoločnosti v súlade s týmito Podmienkami. </p>
+			</article>
+			<article>
+				<h3>Výhra</h3>
+				<p> Každý rok odmeníme jedného používateľa telefónom iPhone 10 alebo rovnocennou výhrou vrátane doručenia.
+					Používateľa, ktorý strávi najviac času v prémiovej sekcii portálu, kontaktujeme na e-mailovej adrese
+					uvedenej pri registrácii. Ak používateľ neodpovie do 72 hodín, stratí nárok na výhru a ponúkneme ju
+					ďalšiemu používateľovi v poradí podľa času stráveného v prémiovej sekcii portálu.
+					Peňažné výhry ani výbery peňazí nie sú k dispozícii.</p>
+			</article>
+			<article>
+				<h3>5. POPLATKY</h3>
+				<p>Pravidelný poplatok sa účtuje za každé obdobie predplatného, počas ktorého je zmluva v platnosti.
+					Za Služby a ich používanie zaplatíte Spoločnosti podľa cenníkov platných v čase vašej objednávky.
+					Pokiaľ nie je uvedené inak, poplatky budú zahrnuté do vyúčtovania vášho mobilného operátora alebo
+					odpočítané z vášho kreditu. Na používanie Služieb sa môžu vzťahovať dodatočné dane a samostatné
+					poplatky mobilného operátora za SMS, WAP, GPRS, UMTS alebo využívanie prenosového pásma.
+					Spoločnosť môže po oznámení zmeniť všetky poplatky vrátane poplatkov za existujúce predplatné.
+					O zmene vás Spoločnosť informuje v primeranom predstihu. Ak nové poplatky, ktoré sa uplatnia
+					len do budúcnosti, neprijmete, môžete zrušiť predplatné a/alebo účet s okamžitou účinnosťou
+					ku dňu ukončenia.</p>
+			</article>
+			<article>
+				<h3>6. VAŠE POVINNOSTI</h3>
+				<p>Na používanie Služieb musíte mať predplatené mobilné komunikačné služby u zapojeného operátora
+					alebo mať iný prístup k (mobilnej) komunikačnej sieti, pre ktorú Spoločnosť Služby sprístupňuje.
+					Musíte mať tiež prístup k službám operátora potrebným na používanie obsahu a/alebo prijímanie
+					SMS správ a uhrádzať všetky súvisiace poplatky za tieto služby. Na mobilnom telefóne musíte mať
+					funkčné pripojenie na internet (napríklad prostredníctvom WAP, GPRS alebo UMTS). Pokyny nájdete
+					na webovej stránke svojho mobilného operátora alebo výrobcu mobilného telefónu. Musíte si tiež
+					zabezpečiť všetky zariadenia a softvér potrebné na prístup k Službám. Zodpovedáte za to, aby
+					zariadenia a/alebo softvér nenarúšali činnosť Spoločnosti. Spoločnosť má právo okamžite odpojiť
+					od Služieb akékoľvek zariadenie alebo softvér, ktoré spôsobujú rušenie, a okamžite ukončiť túto
+					zmluvu. Služby sú určené výlučne na osobné použitie. Nesmiete ich postúpiť ani previesť na iné
+					mobilné telefónne číslo, inú osobu ani iný subjekt a nesmiete inej osobe ani subjektu priamo
+					či nepriamo umožniť prístup k svojim Službám. Nie je dovolené žiadne konanie ani činnosť, ktoré
+					podľa nášho názoru obmedzujú iného používateľa v prístupe k Službám alebo v ich používaní
+					či využívaní, alebo mu v tom bránia. Zaväzujete sa používať Služby výlučne na zákonné účely.</p>
+			</article>
+			<article>
+				<h3>7. PRÁVA DUŠEVNÉHO VLASTNÍCTVA</h3>
+				<p>Ak v týchto Podmienkach nie je uvedené inak, všetky práva, právne tituly a záujmy týkajúce sa
+					duševného vlastníctva, vlastníckych práv alebo iných práv k nehmotnému majetku, ktoré sa používajú,
+					vytvárajú alebo uplatňujú v súvislosti so Službami, tvoria ich súčasť alebo sú v nich obsiahnuté
+					(ďalej len „Práva duševného vlastníctva Spoločnosti“), patria Spoločnosti alebo jej poskytovateľom
+					licencií. Zaväzujete sa, že si k nim nebudete uplatňovať žiadne vlastnícke ani iné nároky.
+					Spoločnosť vám týmto udeľuje a vy prijímate osobnú, obmedzenú, neprevoditeľnú, nevýhradnú
+					a odvolateľnú licenciu, ktorú nemožno postúpiť, a oprávnenie používať Služby na určenom kompatibilnom
+					mobilnom zariadení výlučne na vlastné osobné a nekomerčné účely. Beriete na vedomie a súhlasíte,
+					že Služby ani predmety Práv duševného vlastníctva Spoločnosti nesmiete upravovať, brať do prenájmu
+					ani prenajímať, požičiavať ani vypožičiavať, predávať, distribuovať, vytvárať ani generovať,
+					pokiaľ vám na to Spoločnosť neudelila výslovný písomný súhlas. Beriete na vedomie, že na vás
+					neprechádza žiadny právny titul k Právam duševného vlastníctva Spoločnosti a že k Službám
+					nadobúdate len práva výslovne udelené v týchto Podmienkach. Všetky označenia použité v Službách
+					patria Spoločnosti alebo príslušným vlastníkom a sú chránené vnútroštátnymi a medzinárodnými
+					predpismi o ochranných známkach a autorskom práve. Akékoľvek použitie týchto označení bez
+					výslovného písomného súhlasu Spoločnosti alebo príslušného vlastníka označenia je prísne zakázané.
+					„Wellnence“ je ochranná známka Spoločnosti. Služby možno stiahnuť len raz a nemožno ich v celku
+					ani sčasti prevádzať, predávať, distribuovať, zobrazovať, predvádzať, kopírovať, upravovať ani
+					inak používať spôsobom, ktorý tieto Podmienky neumožňujú. Zaväzujete sa, že na prístup k Službám
+					budete používať výlučne rozhranie poskytnuté Spoločnosťou. Súhlasíte s tým, že ochrana podľa tejto
+					zmluvy sa vzťahuje aj na nositeľov práv, ktorí Spoločnosti poskytujú licencie na používanie
+					hudobného alebo iného obsahu v rámci Služieb. Títo nositelia práv môžu sami vymáhať plnenie
+					ustanovení tejto zmluvy, ktoré sa priamo týkajú ich obsahu. Beriete na vedomie, že používanie
+					hudobných diel podlieha nižšie uvedeným podmienkam používania. Nesmiete tretej strane umožniť
+					kopírovať, upravovať, rozmnožovať, prevádzať, distribuovať ani inak používať hudobné diela,
+					ktoré používate alebo prijímate, nad rámec úzko vymedzených oprávnení podľa autorského práva.
+					Zaväzujete sa bezodkladne informovať Spoločnosť o každom takomto neoprávnenom použití.
+					Všetky práva, ktoré vám táto zmluva výslovne neudeľuje, si vyhradzuje Spoločnosť a/alebo jej
+					poskytovatelia licencií.</p>
+			</article>
+			<article>
+				<h3>8. ZMLUVY O SLUŽBÁCH TRETÍCH STRÁN A TRANSAKCIE S INZERENTMI A/ALEBO SPONZORMI</h3>
+				<p>Služby môžu zahŕňať prístup k službám nezávislých tretích strán priamo alebo prostredníctvom
+					odkazov na webové stránky prevádzkované týmito tretími stranami. Pokiaľ je to primerane možné,
+					Spoločnosť označí takéto služby ako obsah tretej strany. Aj keď môžu byť tieto služby označené
+					značkou tretej strany aj značkou Spoločnosti, a teda obsahovať ochranné známky Spoločnosti,
+					zmluvy o službách poskytovaných tretími stranami uzatvárate priamo s príslušnou treťou stranou.
+					Na čiastočné pokrytie nákladov na naše Služby môžeme spolupracovať s inzerentmi a partnermi
+					v oblasti propagácie. Podmienkou používania týchto Služieb je váš súhlas s tým, že na našej
+					webovej stránke môžeme zobrazovať reklamy a iné propagačné materiály a že vám ich môžeme zasielať
+					v súvislosti s našimi Službami. Súhlasíte tiež s tým, že sa nebudete pokúšať takéto reklamy
+					alebo propagačné materiály blokovať ani inak narúšať ich zobrazovanie alebo doručovanie.
+					V niektorých jurisdikciách nie je dovolené zasielať reklamné SMS správy bez vášho výslovného
+					súhlasu, preto sa uvedené ustanovenie na vás nemusí vzťahovať. Bez vášho súhlasu nebudeme
+					sprístupňovať vaše Osobné údaje tretím stranám. Umiestnenie reklamy alebo propagačných materiálov
+					na našej webovej stránke alebo v rámci Služieb neznamená, že Spoločnosť podporuje daný obsah,
+					produkt, službu alebo spoločnosť. Usilujeme sa zabezpečiť, aby boli reklamy a propagačné materiály
+					vhodné pre našich používateľov. Máte právo kedykoľvek nás požiadať, aby sme vás nekontaktovali
+					na účely priameho marketingu. Spoločnosť nie je účastníkom žiadnej transakcie týkajúcej sa služieb
+					sprístupnených takýmito tretími stranami a nenesie zodpovednosť za takéto transakcie ani za obsah
+					alebo informácie poskytované v súvislosti so službami tretích strán.</p>
+			</article>
+			<article>
+				<h3>9. OCHRANA SÚKROMIA A SPRACÚVANIE ÚDAJOV</h3>
+				<p> Beriete na vedomie, že Spoločnosť na účely prevádzkovania tejto Webovej stránky zhromažďuje
+					a spracúva „osobné informácie“ (t. j. informácie, ktoré možno použiť na to, aby sme vás kontaktovali,
+					alebo ktoré ste nám poskytli, napríklad celé meno, poštovú adresu, pohlavie, vek, názory, odhady,
+					znalosti, telefónne číslo alebo e-mailovú adresu), „finančné informácie“ (t. j. čísla kreditných
+					kariet, údaje o bankových účtoch alebo heslá) alebo „demografické údaje a údaje o používaní“
+					(t. j. informácie, ktoré nám poskytnete alebo ktoré zhromaždíme a ktoré nepatria medzi osobné ani
+					finančné informácie, sú však potrebné na riadne fungovanie a fakturáciu našich Služieb, napríklad
+					údaje o začiatku, konci a rozsahu vášho používania Služieb). Tieto informácie sa spoločne označujú
+					ako „Osobné údaje“ a spracúvajú sa v súlade s ostatnými ustanoveniami tohto článku a so Zásadami
+					ochrany osobných údajov, ktoré sú neoddeliteľnou súčasťou týchto všeobecných obchodných podmienok.
+					Spoločnosť kladie veľký dôraz na súkromie svojich používateľov. Na zabezpečenie úhrady poplatkov
+					však môže vaše Osobné údaje poskytnúť vášmu mobilnému operátorovi alebo poskytovateľovi služieb
+					komunikačnej brány. Vaše Osobné údaje môžeme poskytnúť aj orgánom verejnej moci, okrem iného
+					súdom a okresným prokuratúram, na účely právnych konaní a predchádzania trestnej činnosti.
+					Osobné údaje zhromaždené Spoločnosťou sa môžu uchovávať a spracúvať v Holandsku alebo v ktorejkoľvek
+					inej krajine, v ktorej má Spoločnosť alebo jej zástupcovia prevádzkové zázemie. Používaním Služieb
+					súhlasíte s takýmto prenosom Osobných údajov mimo vašej krajiny. Vaše Osobné údaje budú vymazané
+					najneskôr do šiestich mesiacov od ukončenia predplatného. Spoločnosť ich môže uchovávať aj po tomto
+					termíne, ak to vyžaduje zákon alebo zmluva. Spoločnosť bude v súlade s platnými právnymi predpismi
+					uplatňovať postupy, ktoré jednotlivcom umožnia získať prístup k svojim Osobným údajom a v odôvodnených
+					prípadoch na požiadanie zabezpečiť ich opravu alebo vymazanie.</p>
+			</article>
+			<article>
+				<h3>10. VYLÚČENIE ZÁRUK A OBMEDZENIE ZODPOVEDNOSTI</h3>
+				<p>Spoločnosť, členovia jej riadiacich orgánov, vedúci pracovníci, zamestnanci, dodávatelia a zástupcovia
+					(ďalej len „Strany poskytovateľa“) nenesú zodpovednosť za ujmu vyplývajúcu z vášho používania
+					Služieb. Výslovne beriete na vedomie a súhlasíte s tým, že Služby sa poskytujú „tak, ako sú“
+					a „podľa dostupnosti“, bez akýchkoľvek záruk. Strany poskytovateľa v najširšom rozsahu povolenom
+					zákonom výslovne vylučujú všetky výslovné, implicitné, zákonné aj iné záruky týkajúce sa Služieb,
+					okrem iného implicitné záruky týkajúce sa právneho titulu, obchodovateľnosti, vhodnosti na konkrétny
+					účel a neporušovania vlastníckych práv. Strany poskytovateľa neposkytujú záruky týkajúce sa bezpečnosti,
+					spoľahlivosti, včasnosti ani výkonnosti Služieb. Nezaručujú, že Služby budú spĺňať vaše požiadavky
+					ani že ich prevádzka bude neprerušovaná a bezchybná. Žiadna ústna ani písomná rada či informácia,
+					ktorú získate od nás alebo prostredníctvom našich Služieb, nezakladá záruku, ktorá tu nie je
+					výslovne uvedená. Na žiadnu takúto informáciu ani radu sa nemôžete spoliehať. Beriete na vedomie
+					a súhlasíte, že Služby, obsah, softvér a webové stránky sťahujete a/alebo používate podľa vlastného
+					uváženia a na vlastné riziko a že výlučne vy zodpovedáte za každé poškodenie počítačového systému
+					či mobilného telefónu alebo stratu údajov v dôsledku používania Služieb. Okrem jurisdikcií, v ktorých
+					sú takéto ustanovenia obmedzené, súhlasíte, že celková zodpovednosť Spoločnosti voči vám alebo
+					akejkoľvek tretej osobe a jediný prostriedok nápravy, ktorý máte vy alebo tretia osoba podľa práva,
+					zásad ekvity alebo inak v súvislosti so Službami poskytovanými podľa tejto zmluvy a/alebo s jej
+					porušením, sa obmedzujú na sumu, ktorú ste za tieto Služby zaplatili počas trvania zmluvy.
+					Okrem jurisdikcií, v ktorých sú takéto ustanovenia obmedzené, Strany poskytovateľa nezodpovedajú
+					za priame, nepriame, náhodné, osobitné, exemplárne, sankčné či následné škody ani za škody tretích
+					osôb (vrátane ušlého zisku z podnikania, prerušenia podnikateľskej činnosti, straty obchodných
+					informácií a podobne) vyplývajúce z používania, nesprávneho používania alebo nemožnosti používať
+					Služby, obsah, softvér alebo Webovú stránku, a to aj v prípade, že bola Spoločnosť upozornená na
+					možnosť vzniku takýchto škôd. Ak právne predpisy niektorej krajiny neumožňujú vylúčenie alebo
+					obmedzenie zodpovednosti v uvedenom rozsahu, zodpovednosť Spoločnosti sa obmedzuje v rozsahu
+					povolenom právnymi predpismi danej krajiny.
+				</p>
+			</article>
+			<article>
+				<h3>11. NÁHRADA ŠKODY A OCHRANA PRED NÁROKMI TRETÍCH STRÁN</h3>
+				<p>Zaväzujete sa odškodniť Spoločnosť a jej materské spoločnosti, členov, dcérske a pridružené
+					spoločnosti, poskytovateľov služieb, dodávateľov, zástupcov, poskytovateľov licencií, vedúcich
+					pracovníkov, členov riadiacich orgánov, akcionárov a zamestnancov a chrániť ich pred akoukoľvek
+					stratou, zodpovednosťou, nárokom, žalobou alebo požiadavkou tretej strany vrátane primeraných
+					nákladov na právne zastúpenie, ak vzniknú v dôsledku alebo v súvislosti s (a) vaším používaním
+					Služieb a (b) porušením vašich vyhlásení a záruk uvedených v týchto Podmienkach. Uhradíte všetky
+					náklady, škody a výdavky vrátane primeraných nákladov na právne zastúpenie a ďalších trov, ktoré
+					bola Spoločnosť povinná uhradiť na základe rozhodnutia alebo ktoré jej inak vznikli v súvislosti
+					s takýmto nárokom, žalobou, právnym úkonom, požiadavkou alebo iným konaním.</p>
+			</article>
+			<article>
+				<h3>12. UKONČENIE A ZRUŠENIE SLUŽBY</h3>
+				<p>Ak chcete zrušiť predplatné Služieb prostredníctvom SMS, pošlite správu s textom STOP na číslo,
+					z ktorého dostávate SMS správy. Predplatné môžete zrušiť aj e-mailom. Pri zrušení prostredníctvom
+					SMS nadobudne ukončenie účinnosť okamžite po doručení žiadosti o ukončenie. Pri zrušení e-mailom
+					nadobudne zrušenie účinnosť do 48 hodín od doručenia žiadosti. Poplatky sa môžu objaviť vo
+					vyúčtovaní vášho mobilného operátora aj nasledujúci mesiac, pretože operátor ich účtuje spätne.</p>
+				<p>Súhlasíte, že Spoločnosť môže podľa vlastného uváženia kedykoľvek ukončiť vaše používanie Služieb
+					a odstrániť alebo vymazať akýkoľvek obsah v rámci týchto Služieb, ak (1) sa domnieva, že ste porušili
+					tieto Podmienky alebo konali v rozpore s nimi, (2) neuhradíte poplatky v lehote uvedenej vo vašej
+					zmluve s mobilným operátorom, (3) operátor Spoločnosť o takýto krok výslovne požiada alebo (4) zákon,
+					predpis, smernica alebo opatrenie orgánu verejnej moci spôsobí, že poskytovanie všetkých Služieb
+					alebo ich časti bude protiprávne alebo prakticky neuskutočniteľné. Súhlasíte, že Spoločnosť nenesie
+					voči vám ani žiadnej tretej strane zodpovednosť za ukončenie vášho prístupu k Službám.
+					Ak z akéhokoľvek dôvodu zrušíte svoj účet alebo predplatné, Spoločnosť vám dovtedy zaplatené
+					poplatky nevráti, okrem prípadov výslovne uvedených v týchto Podmienkach.</p>
+			</article>
+		</main>
+	</div>
+	<footer>
+		<section class="ft-main ">
+			<div class="ft-main-item side footer-menu">
+				<h2 class="ft-title">Menu</h2>
+				<ul>
+					<li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+					<li><a href="/?page=terms">Obchodné podmienky</a></li>
+					<li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+				</ul>
+			</div>
+
+			<div class="ft-main-item" id="main-item">
+				<a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+			
+			</div>
+
+			<div class="ft-main-item side footer-contact">
+				<h2 class="ft-title">Kontaktujte nás</h2>
+				<ul>
+					
+					<li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
+							viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+							<g>
+								<g>
+									<polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+								</g>
+							</g>
+							<g>
+								<g>
+									<polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path
+										d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z">
+									</path>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
+								</g>
+							</g>
+						</svg>
+						<a href="mailto:support@wellnence.com">support@wellnence.com</a>
+					</li>
+				
+				</ul>
+			</div>
+		</section>
+		<p>© 2024 wellnence.com. Všetky práva vyhradené.</p>
+	</footer>
+	<script src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

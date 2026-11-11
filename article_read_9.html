@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Recepty Wellnence</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="css/open_sans.css">
+    <link rel="stylesheet" href="css/playfair.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <style>
+        main .slider .img1 {
+            background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img2 {
+            background: url(https://photos.bigoven.com/recipe/hero/simple-fondant-potatoes.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img3 {
+            background: url(https://photos.bigoven.com/recipe/hero/tomato-basil-dip.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="warning">
+            <div class="container">
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+                            </path>
+                        </g>
+                    </svg> Máte problém? <a href="./contactUs.html">Kontaktujte nás</a></span>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Vyhľadať recept" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+
+                    </form>
+
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recepty</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Články</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Kalkulačka kalórií</a>
+                    </li>
+                    <li>
+                        <a href="mealplan.html">Jedálniček</a>
+                    </li>
+                    <li>
+                        <a href="cancel.html">Zrušiť členstvo</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="Používateľské meno" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Heslo" maxlength="12">
+                        <input type="submit" id="authentication" value="Prihlásiť sa" name="authentication">
+                        <a href="" id="signIn">Zaregistrovať sa</a>
+                        <div class="getPremium">
+                            <span class="text">Nemáte účet?</span>
+                            <a href="" class="getAccess">Získať prístup k Premium</a>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </header>
+        <main class="articles read">
+
+            <section class="title">
+                <h1 class="underline">9 PRAVIDIEL STRAVOVANIA, KTORÉ VÁM POMÔŽU ŽIŤ DLHŠIE </h1>
+            </section>
+            <section class="container">
+                <div class="article_block">
+                    <div class="article_illustration">
+                        <img src="imgs/articles/live_longer.png" alt="">
+                    </div>
+                    <p>Dan Buettner, výskumník dlhovekosti, člen výskumného programu National Geographic a autor kníh
+                        The Blue Zones Solution a The Blue Zones Kitchen, sa v prieskume pýtal 150 ľudí vo veku 100 rokov
+                        a viac na ich stravovanie. Prečítajte si deväť zásad stravovania z modrých zón, ktoré vám ukážu,
+                        čo jesť, aby ste žili dlhšie a zostali zdraví.
+                    </p>
+                    <h3>Dbajte na to, aby 90 až 100 % vašej stravy tvorili rastlinné potraviny</h3>
+                    <p>Podľa CNBC jedia storoční ľudia veľa sezónnej a listovej zeleniny, napríklad špenát, kel,
+                        cviklu, repu a mangold. Prebytky sušia alebo nakladajú. V modrých zónach, teda v oblastiach
+                        s najdlhšou očakávanou dĺžkou života, sú po celý rok dostupné strukoviny, listová zelenina,
+                        bataty, celozrnné obilniny, ovocie, orechy a semená.
+                    </p>
+                    <p>Olivový olej patrí medzi najdôležitejšie zložky jedálnička storočných ľudí. Jeho konzumácia
+                        zvyšuje hladinu „dobrého“ cholesterolu a znižuje hladinu „zlého“ cholesterolu.
+                    </p>
+                    <p>Na gréckom ostrove Ikaria ľudia v strednom veku denne skonzumujú približne šesť polievkových lyžíc
+                        olivového oleja. Toto množstvo znižuje riziko predčasného úmrtia o 50 %.
+                    </p>
+
+                    <h3>Jedzte menej mäsa</h3>
+                    <p>Dvanásťročná štúdia, na ktorej sa zúčastnilo 96 000 Američanov z kalifornskej modrej zóny Loma Linda,
+                        ukázala, že vegáni a pescetariáni, ktorí jedia ryby a morské plody, žijú dlhšie. Podľa vedcov
+                        sa vegetariáni pravdepodobne dožívajú o osem rokov viac ako ľudia, ktorí jedia mäso.</p>
+                    <p>Obyvatelia japonskej Okinawy vymysleli azda najlepšiu náhradu mäsa. Je ňou veľmi tuhé tofu
+                        s vysokým obsahom bielkovín a fytoestrogénov, ktoré pomáhajú v boji proti rakovine.</p>
+
+                    <h3>Jedzte ryby s mierou</h3>
+                    <p>Storoční ľudia zvyčajne jedia menšie a lacnejšie ryby, ako sú sardinky, ančovičky a treska.
+                        Tieto druhy sa nachádzajú uprostred potravového reťazca a sú menej vystavené ortuti
+                        a ďalším chemickým látkam.</p>
+
+                    <h3>Nezabúdajte na dennú porciu strukovín
+                    </h3>
+                    <p>Strukoviny majú v jedálničku obyvateľov modrých zón osobitné miesto. Na polostrove Nicoya jedia
+                        čiernu fazuľu, v Stredomorí šošovicu, hrach a bielu fazuľu a na Okinave sójové bôby.</p>
+                    <p>Väčšina storočných ľudí zje aspoň štyrikrát viac fazule ako priemerný človek, teda najmenej
+                        pol pohára denne. Fazuľa obsahuje v prepočte na gram viac živín než ktorákoľvek iná potravina.
+                        V priemere obsahuje 21 % bielkovín, 77 % komplexných sacharidov, len niekoľko percent tuku
+                        a veľa vlákniny.
+                    </p>
+
+                    <h3>Vzdajte sa cukru</h3>
+                    <p>Dlhovekí ľudia prijímajú približne rovnaké množstvo prirodzene sa vyskytujúcich cukrov ako obyvatelia
+                        veľkomiest, ale pridaného cukru skonzumujú len asi pätinu, najviac sedem čajových lyžičiek denne.
+                    </p>
+                    <p>V rokoch 1970 až 2000 sa množstvo pridaného cukru na svetovom trhu zvýšilo o 25 % a dosiahlo
+                        približne 22 čajových lyžičiek na osobu denne. Cukor sa bežne pridáva do limonád,
+                        jogurtov a omáčok.</p>
+                    <p>Sladkosti si nechajte na výnimočné príležitosti, do kávy alebo čaju si pridávajte najviac štyri
+                        čajové lyžičky cukru denne a vyhýbajte sa potravinám, ktoré majú cukor medzi prvými piatimi zložkami.</p>
+
+                    <h3>Dajte si orechy ako desiatu</h3>
+                    <p>Denne zjedzte dve malé hrste orechov. Môžu to byť mandle, pistácie, para orechy, kešu, vlašské
+                        orechy alebo arašidy. Podľa štúdie o výžive a dlhovekosti žijú ľudia, ktorí jedia orechy,
+                        v priemere o dva až tri roky dlhšie.
+                    </p>
+
+                    <h3>Vyberajte si vhodný chlieb</h3>
+                    <p>Snažte sa jesť iba kváskový alebo stopercentne celozrnný chlieb. Väčšina chleba v obchodoch
+                        sa vyrába z rafinovanej bielej múky, ktorá sa v tele rýchlo mení na cukor a zvyšuje hladinu inzulínu.</p>
+                    <p>Na Ikarii a Sardínii sa chlieb vyrába z rôznych celozrnných obilnín, napríklad z pšenice,
+                        raže alebo jačmeňa. Obsahujú širokú škálu živín. Celozrnné obilniny majú podstatne viac
+                        vlákniny než výrobky z bielej múky.</p>
+                    <p>Pri príprave niektorých tradičných chlebov v modrých zónach sa používajú baktérie, napríklad
+                        laktobacily, ktoré rozkladajú škrob a lepok a pomáhajú cestu vykysnúť. Takýto chlieb obsahuje
+                        menej lepku ako chlieb označený ako „bezlepkový“, vydrží dlhšie a má príjemnú kyslastú chuť.</p>
+
+                    <h3>Pite viac vody</h3>
+                    <p>Vyhýbajte sa limonádam vrátane ich diétnych verzií. Obyvatelia modrých zón pijú len kávu, čaj,
+                        vodu a víno. Tu sú dôvody.</p>
+                    <p>Voda. Výskumy ukazujú, že voda zlepšuje prietok krvi a znižuje pravdepodobnosť vzniku krvných zrazenín.
+                    </p>
+                    <p>Káva. Kávu pijú obyvatelia Sardínie, Ikarie a polostrova Nicoya. Vedci spájajú pitie kávy
+                        s nižším rizikom demencie a Parkinsonovej choroby.</p>
+                    <p>Čaj. Obyvatelia Okinawy uprednostňujú zelený čaj, ktorý podľa výskumov znižuje riziko srdcových
+                        ochorení a niektorých druhov rakoviny. Na Ikarii pijú odvar z rozmarínu, divej šalvie a púpavy.
+                        Tieto byliny majú protizápalové účinky.</p>
+                    <p>Červené víno. Ľudia, ktorí pijú víno s mierou, sa zvyčajne dožívajú vyššieho veku než tí, ktorí
+                        vôbec nepijú alkohol.</p>
+
+                    <!--******* sidebar-->
+                    <h3>Jedzte čo najmenej spracované potraviny</h3>
+                    <p>Väčšina storočných ľudí sa stravuje minimálne spracovanými potravinami, ako sú surové ovocie,
+                        zelenina alebo drvené obilniny.</p>
+                    <p>V modrých zónach sa pri príprave tofu, kváskového chleba, vína a nakladanej zeleniny využíva
+                        fermentácia. Ide o tradičný spôsob, ako zlepšiť využiteľnosť živín pre telo. Dlhovekí ľudia
+                        používajú umelé konzervačné látky len zriedka. Pri príprave jedál jednoducho kombinujú
+                        suroviny bez prídavných látok.</p>
+
+                </div>
+                <aside>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/coconut.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>ZÁZRAKY KOKOSOVÉHO OLEJA</h3>
+                            <a href="article_read_2.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/limited%20budget.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>TIPY NA ZDRAVÉ STRAVOVANIE S OBMEDZENÝM ROZPOČTOM</h3>
+                            <a href="article_read_4.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/serving_size.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>AKO ODMERAŤ VEĽKOSŤ PORCIÍ</h3>
+                            <a href="article_read_6.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/waking_up_early.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>7 JEDNODUCHÝCH TIPOV, AKO VSTÁVAŤ SKORO RÁNO</h3>
+                            <a href="article_read_13.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+        </main>
+        <footer>
+            <section class="ft-main ">
+                <div class="ft-main-item side footer-menu">
+                    <h2 class="ft-title">Menu</h2>
+                    <ul>
+                        <li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+                        <li><a href="/?page=terms">Obchodné podmienky</a></li>
+                        <li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+                    </ul>
+                </div>
+
+                <div class="ft-main-item" id="main-item">
+                    <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+
+                </div>
+
+                <div class="ft-main-item side footer-contact">
+                    <h2 class="ft-title">Kontaktujte nás</h2>
+                    <ul>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            <a href="mailto:support@wellnence.com">support@wellnence.com</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <p>© 2022 2024 wellnence.com. Všetky práva vyhradené.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/index.js?"></script>
+</body>
+
+</html>

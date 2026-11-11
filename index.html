@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Recepty Wellnence</title>
+	<link rel="shortcut icon" href="imgs/favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+	<link rel="stylesheet" href="css/open_sans.css">
+	<link rel="stylesheet" href="css/playfair.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+	<link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		main .slider .img1 {
+			background: url(imgs/articles/wellness.png) no-repeat center;
+			background-size: cover;
+		}
+
+		main .slider .img2 {
+			background: url(imgs/articles/healthy_lifestyle.png) no-repeat center;
+			background-size: cover;
+		}
+
+		main .slider .img3 {
+			background: url(imgs/articles/lemon.png) no-repeat center;
+			background-size: cover;
+		}
+
+		main .slider .img4 {
+			background: url(imgs/articles/limited%20budget.png) no-repeat center;
+			background-size: cover;
+		}
+
+		main .slider .img5 {
+			background: url(imgs/articles/coconut.png) no-repeat center;
+			background-size: cover;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="warning">
+			<div class="container">
+				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+						id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+						xml:space="preserve">
+						<g>
+							<path
+								d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+							</path>
+						</g>
+					</svg>
+					Máte problém? <a href="./contactUs.html">Kontaktujte nás</a></span>
+			</div>
+		</div>
+		<header>
+			<div class="container">
+				<a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+				<div class="search" style="display: flex;">
+					<form id="searchForm">
+						<input type="search" id="search" placeholder="Vyhľadať recept" name="search" value=""
+							maxlength="15">
+						<input type="submit" value="">
+					</form>
+				</div>
+
+				<button class="userButton">
+					<svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+						</path>
+					</svg>
+					<svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+						<path
+							d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+						<path
+							d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+					</svg>
+				</button>
+				<ul class="headerMenu">
+					<li><a href="index.html">Recepty</a></li>
+					<li><a href="articles.html">Články</a></li>
+					<li><a href="calculator.html">Kalkulačka kalórií</a></li>
+					<li><a href="mealplan.html">Jedálniček</a></li>
+					<li><a href="cancel.html">Zrušiť členstvo</a></li>
+				</ul>
+				<div class="login">
+					<form id="authenticationForm" action="index.html?page=" method="post">
+						<!--<input type="hidden" name="page" value="">-->
+						<input type="text" id="userName" name="u" value="" placeholder="Používateľské meno" maxlength="22">
+						<input type="password" id="userPassword" name="c" placeholder="Heslo" maxlength="12">
+						<input type="submit" id="authentication" value="Prihlásiť sa" name="authentication">
+						<a href="" id="signIn">Zaregistrovať sa</a>
+						<div class="getPremium">
+							<span class="text">Nemáte účet?</span>
+							<a href="" class="getAccess">Získať prístup k Premium</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="title">
+				<h1>Váš sprievodca svetom chutí a varením</h1>
+				<div class="line"></div>
+			</section>
+			<section class="slider container">
+				<div class="img1">
+					<div class="wrap">
+						<h2>5 TRENDOV VO WELLNESS, KTORÉ UVIDÍTE TENTO ROK</h2>
+						<div class="line"><img src="imgs/line1.jpg" alt=""></div>
+						<p>Všetko, čo potrebujete vedieť o najvýraznejších trendoch v kráse, zdraví a fitnes v tomto roku.</p>
+						<a href="article_read_1.html" class="getRecipe">Čítať viac</a>
+					</div>
+				</div>
+				<div class="img2">
+					<div class="wrap">
+						<h2>5 TIPOV, AKO ŽIŤ ZDRAVŠIE</h2>
+						<div class="line"><img src="imgs/line1.jpg" alt=""></div>
+						<p>Zdravý životný štýl pomáha udržiavať a zlepšovať zdravie a celkovú pohodu.</p>
+						<a href="article_read_7.html" class="getRecipe">Čítať viac</a>
+					</div>
+				</div>
+				<div class="img3">
+					<div class="wrap">
+						<h2>CITRÓNOVÁ KÔRA A JEJ PRÍNOSY PRE ZDRAVIE</h2>
+						<div class="line"><img src="imgs/line1.jpg" alt=""></div>
+						<p>Popri šťavnatej dužine citróna sa pri varení často používa aj jeho výrazne sfarbená vonkajšia kôra, ktorá má množstvo priaznivých účinkov na zdravie.</p>
+						<a href="article_read_11.html" class="getRecipe">Čítať viac</a>
+					</div>
+				</div>
+				<div class="img4">
+					<div class="wrap">
+						<h2>TIPY, AKO SA ZDRAVO STRAVOVAŤ S OBMEDZENÝM ROZPOČTOM</h2>
+						<div class="line"><img src="imgs/line1.jpg" alt=""></div>
+						<p>Pri prechode na zdravší životný štýl môže byť jednou z výziev ustrážiť si výdavky na potraviny.</p>
+						<a href="article_read_4.html" class="getRecipe">Čítať viac</a>
+					</div>
+				</div>
+				<div class="img5">
+					<div class="wrap">
+						<h2>ZÁZRAKY KOKOSOVÉHO OLEJA</h2>
+						<div class="line"><img src="imgs/line1.jpg" alt=""></div>
+						<p>Kokosový olej je ako drzý chalan, z ktorého vyrástol fešák. Zrazu o ňom všetci hovoria.</p>
+						<a href="article_read_2.html" class="getRecipe">Čítať viac</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="title">
+				<h2>NÁJDITE INŠPIRÁCIU NA JEDLÁ A NÁPOJE NA KAŽDÚ PRÍLEŽITOSŤ, OD VEČERÍ CEZ TÝŽDEŇ AŽ PO SVIATOČNÉ HOSTINY.</h2>
+				<div class="line"></div>
+			</section>
+			<section class="container">
+				<div class="sidebar sidebar--index">
+					<div class="sidebar__word-wrap"><a class="sidebar__word" href="#">BEZ LEPKU</a><a class="sidebar__word" href="#">S NÍZKYM OBSAHOM SACHARIDOV</a><a class="sidebar__word" href="#">VEGÁNSKE</a></div>
+					<div class="sidebar__word-wrap"><a class="sidebar__word" href="#">TALIANSKA KUCHYŇA</a><a class="sidebar__word" href="#">FRANCÚZSKA KUCHYŇA</a><a class="sidebar__word" href="#">JAPONSKÁ KUCHYŇA</a><a class="sidebar__word" href="#">ČÍNSKA KUCHYŇA</a><a class="sidebar__word" href="#">GRÉCKA KUCHYŇA</a><a class="sidebar__word" href="#">INDICKÁ KUCHYŇA</a><a class="sidebar__word" href="#">ÁZIJSKÁ KUCHYŇA</a></div>
+					<div class="sidebar__word-wrap"><a class="sidebar__word" href="#">CESTOVINY</a><a class="sidebar__word" href="#">MÄSO</a><a class="sidebar__word" href="#">RYŽA</a><a class="sidebar__word" href="#">KURACIE MÄSO</a><a class="sidebar__word" href="#">ŠALÁT</a><a class="sidebar__word" href="#">DEZERT</a><a class="sidebar__word" href="#">SYR</a><a class="sidebar__word" href="#">LOSOS</a><a class="sidebar__word" href="#">PARADAJKA</a></div>
+				</div>
+				<div class="set">
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/crunchy-ice-cream-dessert.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Chrumkavý zmrzlinový dezert</h3>
+							<p>Lahodný, sladký a chrumkavý dezert so zmrzlinou.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=179763" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/best-ever-buckeyes.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Najlepšie arašidové guľôčky Buckeyes</h3>
+							<p>Vynikajúce!</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=190392" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/lo-mein-noodles-with-shrimp.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Rezance lo mein s krevetami</h3>
+							<p>Rezance lo mein s krevetami</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=107047" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/frittata-15.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Frittata</h3>
+							<p>Frittata je vajíčkové jedlo, ktoré sa pripravuje najmä na sporáku. Je jednoduchšia než omeleta a môžete do nej pridať takmer akúkoľvek zeleninu, syr či mäso, ktoré máte doma. Podáva sa nakrájaná na trojuholníky a ľahko si ju zabalíte so sebou. </p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=199458" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/chicken-zorba.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Kurča na spôsob Zorba</h3>
+							<p>Chutné kuracie jedlo so sviežou limetkovou príchuťou.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=326965" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/crunchy-asian-broccoli-coleslaw-3.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Chrumkavý kapustový šalát s brokolicou na ázijský spôsob</h3>
+							<p>Hodí sa pre väčšiu skupinu, pretože z receptu vyjde veľa porcií.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=174917" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/wonderful-carrot-cake.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Vynikajúci mrkvový koláč</h3>
+							<p>Keď olej nahradíte jablkovým pyré, uberiete cukor a časť bielej múky nahradíte pšeničnou, výsledok bude skvelý. Koláč je oveľa vláčnejší a deťom sa jeho sladká chuť zapáči.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=173110" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/spicy-quinoa-cucumber-and-toma-c86daf.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Pikantný šalát z quinoy, uhoriek a paradajok</h3>
+							<p>Recept z The New York Times: http://www.nytimes.com/2010/07/13/health/nutrition/13recipehealth.html?_r=0 Tento osviežujúci letný šalát vydrží v chladničke niekoľko hodín bez straty kvality, takže sa výborne hodí do práce alebo na letný piknik.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=183592" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video1 container">
+				<video autoplay muted loop id="video1">
+					<source src="video/video1.mp4" type="video/mp4">
+				</video>
+				<h1>OBĽÚBENÉ JEDLÁ SVETOVÝCH KUCHÝŇ</h1>
+			</section>
+			<section class="container">
+				<div class="set">
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/cucumber-tomato-salad-2.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Uhorkovo-paradajkový šalát</h3>
+							<p>Tento šalát pripravíte rýchlo a jednoducho. Zálievka z octu a cukru dodá zelenine sladkokyslú chuť.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=165332" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/pork-tenderloin-with-classic-mole-s-2.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Bravčová panenka s klasickou omáčkou mole</h3>
+							<p>Podrobný recept na klasickú omáčku mole. </p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=159149" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/italian-sausage-stir-fry-4.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Talianska klobása opekaná na panvici</h3>
+							<p>Moja verzia čínskeho jedla rýchlo opekaného na panvici. Namiesto ryže používam cestoviny orzo a pridávam tradičné talianske suroviny.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=171349" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/cream-cheese-filled-banana-bread-2.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Banánový chlebík s náplňou z krémového syra</h3>
+							<p>Chlebík je mäkký a vláčny a vrstva krémového syra chutí, akoby ste doň zapiekli cheesecake. Je to jednoduchý recept bez mixéra a cesto máte za pár minút pripravené do rúry. Používam rozpustený kokosový olej, takže mixér netreba špiniť. S olejom je chlebík mäkší a pružnejší než s maslom. Kokosový olej mu dodáva takmer nebadateľný nádych, ktorý je sladší a voňavejší než pri repkovom alebo inom rastlinnom oleji. Ak chcete, môžete ho však vymeniť. Kyslá smotana alebo grécky jogurt pomôžu, aby bol chlebík mäkký, pružný a nadýchaný. Hrubá vrstva krémového syra má výraznú, nezameniteľnú chuť a práve vďaka nej je tento chlebík výnimočný.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=948963" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="set">
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/tilapia-with-garlic-sauce-and-pasta.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Tilapia s cesnakovou omáčkou a cestovinami</h3>
+							<p>Ryba s výraznou cesnakovou chuťou a cestoviny v maslovej omáčke s čili a bylinkami.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=179930" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/j-d-s-chili-con-carne-2.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Chili con carne podľa J. D.</h3>
+							<p>Chili con carne podľa J. D.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=158455" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div class="video2">
+						<video autoplay muted loop id="video2">
+							<source src="video/video2.mp4" type="video/mp4">
+						</video>
+						<h1>Najlepšie recepty z kuracieho mäsa</h1>
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="set">
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/provincial-roasted-seafood-with-win.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Pečené morské plody na provensálsky spôsob s vínom a nakladaným citrónom</h3>
+							<p>V tomto recepte sa spája inšpirácia od kráľovnej domáceho varenia Nigelly Lawson, zážitky z Nice na juhu Francúzska a trochu experimentovania v kuchyni. Výsledkom je veľmi jednoduché jedlo, ktoré určite urobí dojem. Na takú luxusnú večeru stojí pomerne málo, rozhodne menej, než by ste podľa vzhľadu a chuti čakali!</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=823966" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/mayonnaise-muffins-2.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Majonézové muffiny</h3>
+							<p>Dajte šancu týmto ľahkým a chutným muffinom. Pripravíte ich rýchlo a jednoducho. Majonézu vôbec nemám rád. Keď nám ich jedna staršia pani pripravila na obed, zo slušnosti som ich ochutnal. Hneď som si ich zamiloval. Výborne chutia s maslom a džemom alebo len namočené do mäsovej omáčky. Zamilujete si ich vy aj vaša rodina. </p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=169794" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/spaghetti-with-mussels-and-spi-2d9eba.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Špagety so slávkami a špenátom</h3>
+							<p>Toto chutné jedlo pripravíte jednoducho v jednej nádobe. </p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=159894" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/empanadas-meat-pie.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Empanadas (taštičky s mäsovou plnkou)</h3>
+							<p>Empanadas (taštičky s mäsovou plnkou)</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=1421" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/tomato-basil-soup-5.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Paradajková polievka s bazalkou</h3>
+							<p>Cooking Light, marec 2012</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=308826" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/triple-layer-banan-cream-pie-bars.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Trojvrstvové rezy s banánovým krémom</h3>
+							<p>Trojvrstvové rezy s banánovým krémom</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=202159" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/sauthon-tartare-salmon-tuna-tartare.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Tatarák SauThon (tatarák z lososa a tuniaka)</h3>
+							<p>Dve samostatné porcie tataráku pripravené rôznymi spôsobmi, jedna z lososa a druhá z tuniaka. Dve samostatné porcie tataráku, jedna z lososa a druhá z tuniaka.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=194511" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/seared-salmon-with-bacon-and-balsam-2.jpg" alt="">
+						</div>
+						<div class="wrap">
+							<h3>Opečený losos so slaninou, balzamikovým octom, medom a rozmarínom</h3>
+							<p>Jednoduchá príprava a výborná chuť.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Pridať do jedálnička</a>
+								<a href="mealplan.html" class="inMealplan">V mojom jedálničku</a>
+								<a href="mealplan.html" class="add_error inMealplan">
+									Do denného jedálnička môžete pridať najviac 5 receptov.
+								</a>
+							</div>
+							<a href="index.html?id=171227" class="showRecipe">Zobraziť recept</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div id="pagination"></div>
+		</main>
+		<footer>
+			<section class="ft-main ">
+				<div class="ft-main-item side footer-menu">
+					<h2 class="ft-title">Menu</h2>
+					<ul>
+						<li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+						<li><a href="/?page=terms">Obchodné podmienky</a></li>
+						<li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+					</ul>
+				</div>
+
+				<div class="ft-main-item" id="main-item">
+					<a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+				</div>
+
+				<div class="ft-main-item side footer-contact">
+					<h2 class="ft-title">Kontaktujte nás</h2>
+					<ul>
+						<li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
+								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+								<g>
+									<g>
+										<polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+									</g>
+								</g>
+								<g>
+									<g>
+										<polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+									</g>
+								</g>
+								<g>
+									<g>
+										<path
+											d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z">
+										</path>
+									</g>
+								</g>
+								<g>
+									<g>
+										<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+								L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z">
+										</path>
+									</g>
+								</g>
+							</svg>
+							<a href="mailto:support@wellnence.com">support@wellnence.com</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<p>© 2024 wellnence.com. Všetky práva vyhradené.</p>
+		</footer>
+	</div>
+	<script src="js/pagination.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/index.js?"></script>
+</body>
+
+</html>

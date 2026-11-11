@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Recepty Wellnence</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="css/open_sans.css">
+    <link rel="stylesheet" href="css/playfair.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <style>
+        main .slider .img1 {
+            background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img2 {
+            background: url(https://photos.bigoven.com/recipe/hero/simple-fondant-potatoes.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img3 {
+            background: url(https://photos.bigoven.com/recipe/hero/tomato-basil-dip.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="warning">
+            <div class="container">
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+                            </path>
+                        </g>
+                    </svg> Máte problém? <a href="./contactUs.html">Kontaktujte nás</a></span>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Vyhľadať recept" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+
+                    </form>
+
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recepty</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Články</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Kalkulačka kalórií</a>
+                    </li>
+                    <li>
+                        <a href="mealplan.html">Jedálniček</a>
+                    </li>
+                    <li>
+                        <a href="cancel.html">Zrušiť členstvo</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="Používateľské meno" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Heslo" maxlength="12">
+                        <input type="submit" id="authentication" value="Prihlásiť sa" name="authentication">
+                        <a href="" id="signIn">Zaregistrovať sa</a>
+                        <div class="getPremium">
+                            <span class="text">Nemáte účet?</span>
+                            <a href="" class="getAccess">Získať prístup k Premium</a>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </header>
+        <main class="articles read">
+
+            <section class="title">
+                <h1 class="underline">STRUČNÝ SPRIEVODCA INTUITÍVNYM STRAVOVANÍM</h1>
+            </section>
+            <section class="container">
+                <div class="article_block">
+                    <div class="article_illustration">
+                        <img src="imgs/articles/intuitive.png" alt="">
+                    </div>
+                    <p>Intuitívne stravovanie je prístup k jedlu, pri ktorom sa učíte rozumieť vlastnému telu a jeho
+                        signálom hladu. V podstate je opakom tradičnej diéty. Neurčuje, ktorým jedlám sa vyhýbať
+                        ani čo či kedy jesť. Učí vás, že o tom dokážete najlepšie rozhodnúť vy sami. Tento článok
+                        vás podrobne oboznámi so základmi intuitívneho stravovania.</p>
+                    <h3>ZÁKLADY</h3>
+                    <p>Intuitívne stravovanie podporuje zdravý vzťah k jedlu aj k vlastnému telu. Jeho zásadou je jesť,
+                        keď ste hladní, a prestať, keď sa cítite sýti. Pre mnohých ľudí to však nie je samozrejmé.
+                        Ak sa pri rozhodovaní o tom, čo, kedy a ako jesť, spoliehate na knihy o diétach a takzvaných
+                        odborníkov, môžete stratiť dôveru vo vlastné telo a jeho signály. Pri intuitívnom stravovaní sa
+                        možno budete musieť naučiť opäť dôverovať svojmu telu. Prvým krokom je rozlíšiť telesný
+                        a emocionálny hlad.</p>
+                    <p>Telesný hlad. Je to prirodzený signál, že telo potrebuje doplniť živiny. Prichádza postupne
+                        a môže sa prejaviť škvŕkaním v žalúdku, únavou alebo podráždenosťou. Po jedle ustúpi.
+                        Emocionálny hlad. Vychádza z emocionálnych potrieb. Smútok, osamelosť či nuda môžu vyvolať
+                        chuť na jedlo, často na niečo, čo prináša útechu. Po jedle sa potom môžu dostaviť výčitky
+                        a odpor voči sebe samému.
+                    </p>
+                    <h3>10 HLAVNÝCH ZÁSAD</h3>
+                    <p>Tribole a Resch vo svojej knihe o intuitívnom stravovaní opisujú desať základných zásad
+                        tohto prístupu.
+                    </p>
+                    <h3>1. OPUSTITE DIÉTNE MYSLENIE</h3>
+                    <p>Diétne myslenie vychádza z predstavy, že existuje diéta, ktorá vám bude fungovať.
+                        Intuitívne stravovanie je opakom diétneho prístupu.</p>
+                    <h3>2. REŠPEKTUJTE SVOJ HLAD</h3>
+                    <p>Hlad je prirodzený signál tela. Keď pocítite prvé známky hladu, najedzte sa. Ak budete
+                        čakať, kým vyhladnete, pravdepodobne zjete viac, než potrebujete.</p>
+                    <h3>3. UZAVRITE MIER S JEDLOM</h3>
+                    <p>Prestaňte s jedlom bojovať. Zbavte sa predstáv o tom, čo by ste mali jesť a čo by ste
+                        si mali odopierať.</p>
+                    <h3>4. SPO­CHYBNITE VNÚTORNÉ PRAVIDLÁ O JEDLE</h3>
+                    <p>Jedlo netreba deliť na dobré a zlé. To, čo zjete alebo vynecháte, neurčuje vašu hodnotu.
+                        Keď sa takéto myšlienky objavia, skúste ich spochybniť.</p>
+                    <h3>5. VNÍMAJTE POCIT SÝTOSTI</h3>
+                    <p>Telo vám dáva najavo hlad aj sýtosť. Všímajte si signály príjemnej sýtosti, ktoré vám hovoria,
+                        že ste už zjedli dosť. Počas jedla si všímajte, ako vám chutí a ako veľmi ste hladní alebo sýti.</p>
+                    <h3>6. OBJAVTE POTEŠENIE Z JEDLA</h3>
+                    <p>Spríjemnite si chvíle pri jedle. Dajte si jedlo, ktoré vám robí dobre. Sadnite si k nemu
+                        a vychutnajte si ho. Keď vám jedenie prináša potešenie, možno vám na spokojnosť postačí
+                        menšie množstvo jedla.</p>
+                    <h3>7. REŠPEKTUJTE SVOJE POCITY AJ BEZ JEDLA</h3>
+                    <p>Emocionálne jedenie je jedným zo spôsobov, ako sa vyrovnať s pocitmi. Hľadajte aj spôsoby,
+                        ktoré nesúvisia s jedlom. Choďte napríklad na prechádzku, meditujte, píšte si denník alebo
+                        zavolajte niekomu blízkemu. Všímajte si chvíle, keď pocit, ktorý pokladáte za hlad, vychádza z emócií.</p>
+                    <h3>
+                        8. REŠPEKTUJTE SVOJE TELO
+                    </h3>
+                    <p>Oceňte, čo vaše telo dokáže a aké je krásne také, aké je. Doprajte si viac láskavosti
+                        aj vtedy, keď máte chuť kritizovať svoj vzhľad alebo to, čo na sebe považujete za nedostatky.</p>
+                    <h3>
+                        9. HÝBTE SA A VNÍMAJTE ROZDIEL
+                    </h3>
+                    <p>Nájdite si pohyb, ktorý vás baví. Zamerajte sa na to, ako vám pohyb dodáva energiu, silu
+                        a chuť do života, a presuňte pozornosť od chudnutia k tomu, ako sa cítite.</p>
+                    <h3>10. DBAJTE NA SVOJE ZDRAVIE LÁSKAVÝM PRÍSTUPOM K VÝŽIVE</h3>
+                    <p>Jedlo by vám malo chutiť a mali by ste sa po ňom cítiť dobre. Vaše zdravie ovplyvňujú najmä
+                        dlhodobé stravovacie návyky. Jedno jedlo či jedna desiata o vašom zdraví nerozhodnú.</p>
+                    <h3>PRÍNOSY</h3>
+                    <p>Výskum v tejto oblasti sa stále rozvíja a doteraz sa zameriaval najmä na ženy. Štúdie spájajú
+                        intuitívne stravovanie so zdravšími psychickými postojmi, nižším indexom telesnej hmotnosti (BMI)
+                        a udržaním hmotnosti. Súvislosť s chudnutím zatiaľ nepreukázali. Jedným z hlavných prínosov
+                        intuitívneho stravovania je lepšie duševné zdravie. Účastníci štúdií si zlepšili sebaúctu,
+                        vnímanie vlastného tela a celkovú kvalitu života. Zároveň pociťovali menej príznakov depresie
+                        a úzkosti. V programoch intuitívneho stravovania ľudia častejšie vytrvajú a osvojené návyky
+                        si udržia dlhšie než pri diéte. Ďalšie štúdie skúmali stravovacie správanie a postoje žien
+                        a zistili, že u žien s výraznejšími znakmi intuitívneho stravovania sa menej často vyskytuje
+                        narušené stravovacie správanie.</p>
+                    <h3>ZHRNUTIE</h3>
+                    <p>Nové výskumy naznačujú, že intuitívne stravovanie súvisí so zdravším vzťahom k jedlu aj k sebe
+                        samému a že sa ho možno naučiť prostredníctvom cielených programov.</p>
+                    <!--******* sidebar-->
+                </div>
+                <aside>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/coconut.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>ZÁZRAKY KOKOSOVÉHO OLEJA</h3>
+                            <a href="article_read_2.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/limited%20budget.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>TIPY NA ZDRAVÉ STRAVOVANIE S OBMEDZENÝM ROZPOČTOM</h3>
+                            <a href="article_read_4.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/serving_size.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>AKO ODMERAŤ VEĽKOSŤ PORCIÍ</h3>
+                            <a href="article_read_6.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/live_longer.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>9 PRAVIDIEL STRAVOVANIA, KTORÉ VÁM POMÔŽU ŽIŤ DLHŠIE</h3>
+                            <a href="article_read_9.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+        </main>
+        <footer>
+            <section class="ft-main ">
+                <div class="ft-main-item side footer-menu">
+                    <h2 class="ft-title">Menu</h2>
+                    <ul>
+                        <li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+                        <li><a href="/?page=terms">Obchodné podmienky</a></li>
+                        <li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+                    </ul>
+                </div>
+
+                <div class="ft-main-item" id="main-item">
+                    <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+
+                </div>
+
+                <div class="ft-main-item side footer-contact">
+                    <h2 class="ft-title">Kontaktujte nás</h2>
+                    <ul>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="mailto:support@wellnence.com">support@wellnence.com</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <p>© 2024 wellnence.com. Všetky práva vyhradené.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/index.js?"></script>
+</body>
+
+</html>

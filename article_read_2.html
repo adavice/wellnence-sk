@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Recepty Wellnence</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="css/open_sans.css">
+    <link rel="stylesheet" href="css/playfair.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <style>
+        main .slider .img1 {
+            background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img2 {
+            background: url(https://photos.bigoven.com/recipe/hero/simple-fondant-potatoes.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img3 {
+            background: url(https://photos.bigoven.com/recipe/hero/tomato-basil-dip.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="warning">
+            <div class="container">
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+                            </path>
+                        </g>
+                    </svg> Máte problém? <a href="./contactUs.html">Kontaktujte nás</a> </span>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Vyhľadať recept" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+
+                    </form>
+
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recepty</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Články</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Kalkulačka kalórií</a>
+                    </li>
+                    <li>
+                        <a href="mealplan.html">Jedálniček</a>
+                    </li>
+                    <li>
+                        <a href="cancel.html">Zrušiť členstvo</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="Používateľské meno" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Heslo" maxlength="12">
+                        <input type="submit" id="authentication" value="Prihlásiť sa" name="authentication">
+                        <a href="" id="signIn">Zaregistrovať sa</a>
+                        <div class="getPremium">
+                            <span class="text">Nemáte účet?</span>
+                            <a href="" class="getAccess">Získať prístup k Premium</a>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </header>
+        <main class="articles read">
+
+            <section class="title">
+                <h1 class="underline">ZÁZRAKY KOKOSOVÉHO OLEJA</h1>
+            </section>
+            <section class="container">
+                <div class="article_block">
+                    <div class="article_illustration">
+                        <img src="imgs/articles/coconut.png" alt="">
+                    </div>
+                    <p>Kokosový olej je ako chalan, z ktorého vyrástol poriadny fešák. Dnes je v kurze a všetci o ňom hovoria.
+                        Gwyneth Paltrow si ním vyplachuje ústa, aby si vybielila zuby, Poppy Delevingne ho necháva pôsobiť
+                        cez noc a Kelly Osborne odporúča vklepať si ho na lícne kosti, aby získali prirodzený lesk.
+                        Kokosový olej sám o sebe nehydratuje, rovnako ako iné oleje. Pri vhodnom použití však môže
+                        suché vlasy zjemniť, dodať im lesk a pomôcť obnoviť ich poškodenú štruktúru.
+                        Prečítajte si deväť spôsobov, ako ho zaradiť do starostlivosti o vlasy.
+                    </p>
+                    <h3>1. CHRÁŇTE VLASY PRED UMÝVANÍM</h3>
+                    <p>Tento trik sa hodí najmä na suché alebo kučeravé vlasy. Asi hodinu pred sprchovaním naneste
+                        trochu kokosového oleja na suché vlasy a vynechajte pokožku hlavy. Olej chráni jednotlivé
+                        pramene pred vysušením pri umývaní šampónom. Po umytí olej opláchnite a naneste kondicionér
+                        ako zvyčajne. Ak máte jemné vlasy, olej ich môže príliš zaťažiť.
+                    </p>
+                    <h3>2. ZOSILNITE ÚČINOK KONDICIONÉRA</h3>
+                    <p>Kokosový olej môže zosilniť účinok každého kondicionéra. Keď kondicionér dôkladne rozotriete
+                        po vlasoch, naneste naň vrstvu kokosového oleja. Olej vytvorí ochrannú vrstvu, ktorá
+                        udrží hydratačné zložky kondicionéra vo vlasoch a umožní im dlhšie a účinnejšie prenikať
+                        do vlasového vlákna. Pred opláchnutím počkajte aspoň 15 minút, prípadne až hodinu. Čím dlhšie
+                        počkáte, tým jemnejšie budú vlasy.</p>
+                    <h3>3. NECHAJTE HO VO VLASOCH
+                    </h3>
+                    <p>Tento postup sa hodí na husté a suché vlasy. Po umytí šampónom a použití kondicionéra
+                        rozčešte do vlasov hydratačný prípravok. Výborné sú napríklad Supercream od DevaCurls
+                        a Hair Dew od Oyin Handmade. Na hydratačný prípravok potom naneste množstvo kokosového
+                        oleja približne vo veľkosti mince. Vlasy vysušte ako zvyčajne. Olej pomôže udržať
+                        hydratačný prípravok vo vlasoch, takže zostanú dlhšie hydratované.</p>
+                    <h3>4. UĽAHČITE SI ROZČESÁVANIE</h3>
+                    <p>Máte zamotané vlasy? Naneste trochu kokosového oleja na pramene, ktoré sa ťažko rozčesávajú.
+                        Hrebeň sa po nich bude ľahšie kĺzať.</p>
+                    <h3>5. DODAJTE VLASOM LESK AJ NA FOTKÁCH</h3>
+                    <p>Na prirodzený lesk stačí dať trochu kokosového oleja do rozprašovača a jemne ním postriekať
+                        vlasy. Ak olej stuhol, vložte fľaštičku na niekoľko minút do misky s teplou vodou,
+                        aby sa olej znova rozpustil.
+                    </p>
+                    <h3>6. POUŽITE HO AKO PLAVECKÚ ČIAPKU</h3>
+                    <p>Čo je na kúpaní najhoršie? To, čo s vlasmi robí slaná alebo chlórovaná voda. Pred odchodom
+                        na pláž či do bazéna naneste na vlasy kokosový olej. Do istej miery vytvorí medzi prameňmi
+                        a vodou ochrannú vrstvu. Predstavte si ho ako prírodnú plaveckú čiapku, v ktorej ešte
+                        aj dobre vyzeráte.</p>
+                    <h3>7. SKROŤTE KREPATENIE VO VLHKOM POČASÍ</h3>
+                    <p>Medzi prstami rozotrite množstvo kokosového oleja veľké asi ako hrášok. Naneste ho na miesta,
+                        kde sa vlasy krepovatejú alebo odstávajú, a pramene uhlaďte. Stačí naozaj málo!</p>
+                    <!--******* sidebar-->
+                    <h3>8. ZAMASKUJTE ROZŠTIEPENÉ KONČEKY</h3>
+                    <p>Rozštiepené končeky kokosovým olejom nezlepíte. Trvalo ich nespojí žiadny prípravok, hoci
+                        niektoré to sľubujú. Olej ich však dokáže na chvíľu zamaskovať. Stačí votrieť malé množstvo
+                        do končekov. Dodá im lesk a dočasne ich uhladí.</p>
+                    <h3>9. ZBAVTE SA VŠÍ</h3>
+                    <p>Kokosový olej je podľa článku prekvapivo účinný. V štúdii z roku 2002 dostávalo 940 detí
+                        vlasovú zmes kokosového oleja, anízového oleja a oleja z ylang-ylangu. Zmes im nanášali
+                        na vlasy trikrát denne počas piatich dní. Úspešnosť zmesi dosiahla 92,3 %, čo bolo
+                        o niečo viac než 92,2 % v kontrolnej skupine, ktorá dostávala liečivý prípravok.</p>
+                    <h3>PRI VYPADÁVANÍ VLASOV ANI PRI LUPINÁCH HO NEPOUŽÍVAJTE.</h3>
+                    <p>Dôveryhodné recenzované štúdie, ktoré by ukazovali, že kokosový olej podporuje opätovný rast vlasov,
+                        chýbajú. Podľa článku zostáva najlepšou voľbou Rogaine. Pri lupinách môže kokosový olej šupinatenie
+                        dokonca zhoršiť. Podľa článku pri nanesení na pokožku hlavy upcháva póry a bráni vlasovým folikulom
+                        „dýchať“. Pokožka hlavy sa tak vysušuje a lupiny môžu byť výraznejšie. Skúste liečivý šampón.</p>
+                    <h3>
+                        PRÍNOSY KOKOSOVÉHO OLEJA
+                    </h3>
+                    <p>Kokosový olej je bohatý na antioxidanty a mastné kyseliny a má protivírusové, protiplesňové
+                        a antibakteriálne vlastnosti. Vďaka tomu môže zlepšiť vzhľad, štruktúru a zdravie vlasov.
+                        Pri použití na vlasy môže kokosový olej:</p>
+                    <p>
+                    <ul>
+                        <li>- zmierniť suchosť vlasov</li>
+                        <li>- zlepšiť stav pokožky hlavy</li>
+                        <li>- chrániť vlasy pred stratou bielkovín</li>
+                        <li>- chrániť vlasy pred UV žiarením</li>
+                        <li>- pomáhať v boji proti infekciám a plesniam</li>
+                        <li>- podporovať rast vlasov</li>
+                        <li>- dodať vlasom objem a lesk</li>
+                    </ul>
+                    </p>
+                    <p>S kokosovým olejom môžete mať bohaté, lesklé a zdravé vlasy, ktoré sa ľahko upravujú. Už ste uvažovali,
+                        že sa zbavíte bežných kondicionérov, sér a stylingových prípravkov, ktoré môžu časom poškodzovať
+                        vlasy a prípadne aj zdravie? Môžete ich nahradiť týmto prírodným prípravkom. Kokosový olej má
+                        antimikrobiálne vlastnosti a je bohatý na kyselinu laurovú a mastné kyseliny so stredne dlhým
+                        reťazcom. Tie posilňujú vlasy, starajú sa o pokožku hlavy a pomáhajú pri opätovnom raste vlasov.
+                        O účinkoch kokosového oleja pri konzumácii sa hovorí už dlho. Pozornosť si zaslúžia aj jeho ďalšie
+                        využitia, napríklad ako prírodný prípravok na všestrannú starostlivosť o vlasy. Vďaka vitamínom,
+                        minerálom a ďalším živinám pomáha udržať vlasy pevné, lesklé a na pohľad zdravé.</p>
+
+                </div>
+                <aside>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/waking_up_early.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>7 JEDNODUCHÝCH TIPOV, AKO VSTÁVAŤ SKORO RÁNO</h3>
+                            <a href="article_read_13.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/limited%20budget.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>TIPY NA ZDRAVÉ STRAVOVANIE S OBMEDZENÝM ROZPOČTOM</h3>
+                            <a href="article_read_4.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/serving_size.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>AKO ODMERAŤ VEĽKOSŤ PORCIÍ</h3>
+                            <a href="article_read_6.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/live_longer.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>9 PRAVIDIEL STRAVOVANIA, KTORÉ VÁM POMÔŽU ŽIŤ DLHŠIE</h3>
+                            <a href="article_read_9.html" class="showRecipe">Čítať viac</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+        </main>
+        <footer>
+            <section class="ft-main ">
+                <div class="ft-main-item side footer-menu">
+                    <h2 class="ft-title">Menu</h2>
+                    <ul>
+                        <li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+                        <li><a href="/?page=terms">Obchodné podmienky</a></li>
+                        <li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+                    </ul>
+                </div>
+    
+                <div class="ft-main-item" id="main-item">
+                    <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+                    
+                </div>
+    
+                <div class="ft-main-item side footer-contact">
+                    <h2 class="ft-title">Kontaktujte nás</h2>
+                    <ul>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            <a href="mailto:support@wellnence.com">support@wellnence.com</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </section>
+            <p>© 2024 wellnence.com. Všetky práva vyhradené.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/index.js?"></script>
+</body>
+
+</html>

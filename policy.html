@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Zásady ochrany osobných údajov</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/privacy.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="warning">
+			<div class="container">
+				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+						id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+						xml:space="preserve">
+						<g>
+							<path
+								d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+							</path>
+						</g>
+					</svg> Máte problém? <a href="./contactUs.html">Kontaktujte nás</a></span>
+			</div>
+		</div>
+		<header>
+			<div class="container">
+				<a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+				<div class="search" style="display: flex;">
+					<form id="searchForm">
+						<input type="search" id="search" placeholder="Vyhľadať recept" name="search" value="" maxlength="15">
+						<input type="submit" value="">
+						
+					</form>
+
+				</div>
+
+
+				<button class="userButton">
+					<svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+						</path>
+					</svg>
+					<svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+						<path
+							d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+						<path
+							d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+					</svg>
+				</button>
+				<ul class="headerMenu">
+					<li>
+						<a href="index.html">Recepty</a>
+					</li>
+					<li>
+						<a href="articles.html">Články</a>
+					</li>
+					<li>
+						<a href="calculator.html">Kalkulačka kalórií</a>
+					</li>
+                    <li>
+                        <a href="mealplan.html">Jedálniček</a>
+                    </li>
+					<li>
+						<a href="cancel.html">Zrušiť členstvo</a>
+					</li>
+				</ul>
+				<div class="login">
+					<form id="authenticationForm" action="index.html?page=" method="post">
+						<!--<input type="hidden" name="page" value="">-->
+						<input type="text" id="userName" name="u" value="" placeholder="Používateľské meno" maxlength="22">
+						<input type="password" id="userPassword" name="c" placeholder="Heslo" maxlength="12">
+						<input type="submit" id="authentication" value="Prihlásiť sa" name="authentication">
+						<a href="" id="signIn">Zaregistrovať sa</a>
+						<div class="getPremium">
+							<span class="text">Nemáte účet?</span>
+							<a href="" class="getAccess">Získať prístup k Premium</a>
+						</div>
+					</form>
+				</div>
+
+
+			</div>
+
+		</header>
+		<main class="policy_terms container">
+			<section class="title">
+				<h1>Zásady ochrany osobných údajov</h1>
+			</section>
+			<article>
+				<p>Túto službu vám poskytuje spoločnosť AryaMg LTD, Evripidou 5, Paralimni, 5290, Famagusta, Cyprus.
+					Nasledujúce podmienky tvoria úplnú dohodu medzi poskytovateľom služby
+					(Wellnence.com) a používateľom.</p>
+			</article>
+			<article>
+				<h3>VŠEOBECNÉ USTANOVENIA</h3>
+				<p>Používaním Webovej stránky a Služby súhlasíte s tým, že budeme zhromažďovať, spracúvať, používať
+					a sprístupňovať vaše Osobné údaje v súlade s týmito Zásadami ochrany osobných údajov, ktoré
+					môžeme z času na čas z akéhokoľvek dôvodu zmeniť. Tieto Zásady vysvetľujú, ako môžeme vaše Osobné
+					údaje zhromažďovať, spracúvať, používať a za určitých okolností sprístupňovať v súlade so všetkými
+					príslušnými právnymi predpismi. Pozorne si prečítajte tieto Zásady a v prípade otázok nás
+					kontaktujte. Ak s týmito Zásadami nesúhlasíte, nepoužívajte služby poskytované prostredníctvom
+					internetu, Webové stránky ani mobilné zábavné a informačné služby poskytované prostredníctvom SMS
+					(spoločne ďalej len „Služby“) a/alebo sa nezúčastňujte na kvízoch, súťažiach, kampaniach
+					ani iných aktivitách ponúkaných na Webových stránkach.</p>
+
+				<p>„Osobné údaje“ v zmysle týchto Zásad ochrany osobných údajov znamenajú informácie o identifikovateľnej
+					fyzickej osobe, ako ich vymedzujú príslušné právne predpisy o ochrane súkromia. Osobné údaje môžu
+					zahŕňať vaše meno, adresu bydliska, súkromné pevné alebo mobilné telefónne číslo, súkromnú e-mailovú
+					adresu, vek, etnický pôvod, príjem, preferencie a názory. Nezahŕňajú meno, pracovnú pozíciu, pracovnú
+					adresu ani pracovné telefónne číslo zamestnanca organizácie. Ak sa niektoré z osobných údajov,
+					ktoré ste nám poskytli, označia za „citlivé údaje“ (napríklad údaje o vašom rasovom alebo etnickom
+					pôvode, politických názoroch, sexuálnych preferenciách alebo náboženskom presvedčení), výslovne
+					súhlasíte s tým, že ich môžeme spracúvať v súlade s týmito Zásadami. Týmto však potvrdzujeme a
+					zaručujeme, že žiadne citlivé údaje neposkytneme tretím stranám na účely priameho marketingu.</p>
+			</article>
+			<article>
+				<h3>1. ZMENY TÝCHTO ZÁSAD OCHRANY OSOBNÝCH ÚDAJOV</h3>
+				<p>Vyhradzujeme si právo podľa vlastného uváženia meniť ustanovenia týchto Zásad ochrany osobných údajov. Všetky podstatné zmeny zverejníme na viditeľnom mieste na tejto stránke. Odporúčame vám túto stránku pravidelne navštevovať, aby ste sa oboznámili s prípadnými zmenami. Ak po vykonaní zmien budete Služby naďalej používať, považuje sa to za prijatie týchto zmien.</p>
+			</article>
+
+			<article>
+				<h3>2. ÚDAJE, KTORÉ ZHROMAŽĎUJEME</h3>
+				<p>Aby sme vám mohli poskytovať celý rozsah našich Služieb, môžeme zhromažďovať tieto druhy Osobných údajov:</p>
+				<ul>A: KONKRÉTNE ÚDAJE, KTORÉ NÁM POSKYTUJETE
+					<li>Keď sa zaregistrujete na využívanie niektorej z našich Služieb alebo sa zapojíte do niektorej z našich
+					propagačných akcií, ktorá vyžaduje registráciu, požiadame vás o osobné údaje, napríklad o vaše meno,
+					mobilného operátora a mobilné telefónne číslo.</li>
+				</ul>
+				<ul>B: ÚDAJE V PROTOKOLOCH SERVERA
+					<li>Keď pristupujete k Službám, naše servery na účely zabezpečenia vašej návštevy webových stránok,
+						ktoré spravujeme my alebo ktoré sa spravujú v našom mene, automaticky zaznamenávajú údaje, ktoré
+						neumožňujú vašu osobnú identifikáciu a ktoré váš prehliadač odosiela pri každej návšteve webovej
+						stránky. Protokoly servera môžu obsahovať okrem iného vašu webovú požiadavku, adresu internetového
+						protokolu (IP), MSISDN (telefónne číslo mobilnej stanice v digitálnej sieti integrovaných služieb),
+						typ a jazyk prehliadača a dátum a čas vašej požiadavky. Môže sa vám tiež priradiť súbor cookie
+						(malý textový súbor s jedinečným identifikátorom). Súbory cookie môžu napríklad uložiť vaše heslo
+						na jednoduchšie prihlásenie na stránku, ktorú ste už navštívili, alebo uložiť vaše preferencie a
+						nastavenia predplatného na prispôsobenie domovskej stránky. Aj reklamy tretích strán zobrazované na
+						našich Webových stránkach môžu obsahovať súbory cookie nastavené internetovými reklamnými
+						spoločnosťami alebo inzerentmi. Tieto súbory cookie nekontrolujeme. Návštevníci našich Webových
+						stránok by si preto mali prečítať zásady ochrany osobných údajov inzerenta a zistiť, či a ako
+						používa súbory cookie. Svoj počítač môžete nastaviť tak, aby vás upozornil pri každom odoslaní
+						súboru cookie alebo aby súbory cookie úplne odmietal. Bez súborov cookie však nemusíte mať prístup
+						k niektorým funkciám našich Webových stránok, napríklad k stránke s nastaveniami predplatného.</li>
+				</ul>
+				<ul>C: DEMOGRAFICKÉ ÚDAJE A ÚDAJE O POUŽÍVANÍ
+					<li>Keď nám pošlete e-mail alebo s nami komunikujete iným spôsobom, môžeme túto komunikáciu vrátane
+						Osobných údajov, ktoré obsahuje, uchovávať, aby sme mohli vybavovať vaše otázky, reagovať na vaše
+						požiadavky a zlepšovať naše Služby. Môže ísť napríklad o údaje, ktoré nám poskytnete alebo ktoré
+						zhromaždíme a ktoré nemajú povahu osobných ani finančných údajov, ale sú potrebné na riadne
+						fungovanie a fakturáciu našich Služieb. Patria sem informácie o zmluve medzi vami a nami a údaje
+						o začiatku, konci a rozsahu vášho používania Služieb.</li>
+				</ul>
+			</article>
+
+			<article>
+				<h3>3. POUŽÍVANIE VAŠICH OSOBNÝCH ÚDAJOV</h3>
+				<p>Vaše Osobné údaje používame výlučne na účely opísané v týchto Zásadách ochrany osobných údajov
+					a/alebo v doplňujúcich oznámeniach o ochrane osobných údajov pre konkrétne Služby. Medzi tieto účely patria:</p>
+				<ul class="orderList">
+					<li>Poskytovanie, fakturácia a prevádzka našich Služieb a realizácia propagačných akcií, kvízov,
+						súťaží, kampaní a podobných aktivít vrátane zobrazovania prispôsobeného obsahu a reklamy.</li>
+					<li>Vykonávanie auditov, výskumu a štatistických analýz s cieľom udržiavať, chrániť a zlepšovať naše Služby.</li>
+					<li>Zabezpečovanie technického fungovania našej siete.</li>
+					<li>Ochrana našich majetkových práv vrátane práv duševného vlastníctva alebo ochrana majetku našich používateľov.</li>
+					<li>Vývoj nových služieb.</li>
+				</ul>
+				<p>Výslovne súhlasíte s tým, že vaše Osobné údaje použijeme aj na informovanie o našich službách a
+					propagačných akciách. Môžeme vás kontaktovať e-mailom, telefonicky, poštou, prostredníctvom SMS
+					alebo obdobnými elektronickými prostriedkami. Vaše Osobné údaje nebudeme zhromažďovať, používať
+					ani sprístupňovať na iné účely, ako sú uvedené v týchto Zásadách ochrany osobných údajov a/alebo
+					v doplňujúcich oznámeniach o ochrane osobných údajov pre jednotlivé Služby, pokiaľ sme nezískali
+					váš predchádzajúci súhlas alebo nám to zákon neumožňuje či neukladá. Na účely opísané v týchto
+					Zásadách a na aktualizáciu vášho osobného profilu môžeme spojiť všetky osobné údaje, ktoré sme
+					o vás zhromaždili.</p>
+			</article>
+		
+
+			<article>
+				<h3>4. POUŽÍVANIE VAŠICH OSOBNÝCH ÚDAJOV</h3>
+				<p>Vaše Osobné údaje nepredávame ani inak neposkytujeme tretím stranám okrem prípadov uvedených
+					v týchto Zásadách ochrany osobných údajov. Vaše Osobné údaje sprístupníme tretím stranám len v týchto prípadoch:</p>
+
+				<ul class="orderList">
+					<li>O takomto sprístupnení vás informujeme pri poskytnutí vašich Osobných údajov a/alebo v
+						doplňujúcom oznámení o ochrane osobných údajov pre príslušnú Službu.</li>
+					<li>Takéto sprístupnenie vyžaduje zákon alebo rozhodnutie príslušného súdu, prípadne sme v dobrej
+						viere presvedčení, že sprístupnenie je nevyhnutné na ochranu alebo obhajobu našich práv či majetku.</li>
+					<li> Takéto sprístupnenie je nevyhnutné na to, aby poskytovatelia služieb, ktorých sme si najali,
+						mohli vykonávať činnosti v našom mene alebo nám poskytovať služby, ako sú reklama, propagácia,
+						vybavovanie objednávok, prieskum trhu, audit, správa webových stránok, spracúvanie údajov,
+						služby v oblasti informačných technológií a administratívne služby. Príslušná organizácia
+						alebo osoba pritom nesmie Osobné údaje zhromažďovať, používať ani sprístupňovať na iný účel
+						než na vykonávanie týchto činností alebo poskytovanie týchto služieb.</li>
+					<li>Osobné údaje sú súčasťou transakcie týkajúcej sa predaja alebo sekuritizácie časti alebo
+						celého nášho majetku výlučne na účely uľahčenia a uskutočnenia takejto transakcie. Po dokončení
+						transakcie vás o tom budeme informovať. Vlastníctvo a kontrolu nad vašimi osobnými údajmi
+						prevedieme na tretiu stranu v súlade so všetkými podmienkami a obmedzeniami uvedenými v týchto
+						Zásadách ochrany osobných údajov.</li>
+					<li>Poveríme tretie strany („sprostredkovateľov“) spracúvaním niektorých vašich údajov v našom mene.
+						Na požiadanie vám poskytneme zoznam týchto subjektov.</li>
+				</ul>
+			</article>
+
+			<article>
+				<h3>5. LEN PRE DOSPELÝCH</h3>
+				<p>Služby ani Webové stránky nie sú určené pre maloleté osoby. Nebudeme vedome zhromažďovať žiadne
+					údaje, ktoré nám poskytli maloleté osoby a ktoré umožňujú ich identifikáciu. Ak dostaneme
+					oznámenie, že sme zhromaždili osobné údaje maloletej osoby bez súhlasu rodiča, bezodkladne
+					ich vymažeme.</p>
+			</article>
+
+			<article>
+				<h3>6. INÉ WEBOVÉ STRÁNKY</h3>
+				<p>Tieto Zásady ochrany osobných údajov sa vzťahujú výlučne na naše Služby a propagačné akcie.
+					Nemáme kontrolu nad stránkami zobrazovanými vo výsledkoch vyhľadávania, stránkami, ktoré
+					obsahujú naše aplikácie, produkty alebo Služby, ani nad odkazmi v rámci našich Služieb.
+					Tieto iné stránky môžu do vášho počítača ukladať vlastné súbory cookie alebo iné súbory,
+					zhromažďovať údaje alebo vás žiadať o poskytnutie Osobných údajov. Majú vlastné pravidlá
+					týkajúce sa súborov cookie a zhromažďovania a používania Osobných údajov. Je na vás, aby ste
+					sa s týmito pravidlami oboznámili.</p>
+			</article>
+
+
+			<article>
+				<h3>7. BEZPEČNOSŤ</h3>
+				<p>Ochrana vašich Osobných údajov je pre nás dôležitá. Na ich zabezpečenie používame technológie,
+					ktoré zodpovedajú štandardom v odvetví. Pri prenose údajov cez internet alebo mobilné
+					komunikačné siete nemožno zaručiť stopercentnú bezpečnosť. Hoci sa zaväzujeme chrániť vaše
+					Osobné údaje, nemôžeme zabezpečiť ani zaručiť bezpečnosť informácií, ktoré nám alebo
+					prostredníctvom nás odosielate. Osobné údaje, ktoré zhromažďujeme, sa v súčasnosti uchovávajú
+					na počítačoch v Holandsku. Na účely spracúvania opísané v týchto Zásadách môžeme Osobné údaje
+					prenášať do iných krajín, ktoré sa môžu nachádzať mimo Európskeho hospodárskeho priestoru
+					(EHP) alebo mimo vašej krajiny a ktorých právne predpisy o ochrane údajov sa môžu líšiť od
+					predpisov platných v EHP alebo v jurisdikcii, v ktorej žijete. V súlade s príslušnými
+					právnymi predpismi týchto jurisdikcií zavedieme primerané opatrenia, ktoré sprostredkovateľa
+					v danej krajine zaviažu chrániť Osobné údaje na úrovni rovnocennej ochrane v EHP alebo
+					v krajine, v ktorej žijete. Ak naše Služby používate počas pobytu mimo EHP, vaše údaje sa
+					môžu preniesť mimo EHP, aby sme vám tieto Služby mohli poskytnúť. Súhlasom s týmito Zásadami
+					zároveň súhlasíte s prenosom svojich Osobných údajov mimo EHP alebo krajiny, v ktorej žijete,
+					na uvedené účely.</p>
+			</article>
+
+			<article>
+				<h3>8. PRÍSTUP K VAŠIM OSOBNÝM ÚDAJOM</h3>
+				<p>Máte právo na prístup k Osobným údajom, ktoré ste nám poskytli, a na ich opravu. Svoje preferencie
+					môžete tiež zmeniť. Môžete poslať e-mail na adresu uvedenú nižšie, na Webových stránkach a/alebo
+					v rámci našich Služieb a uviesť, či si želáte vymazať svoje Osobné údaje z našej databázy,
+					odhlásiť sa z odberu našich oznámení alebo odhlásiť sa z odberu oznámení od marketingových
+					subjektov tretích strán či obchodných partnerov. Vymazanie Osobných údajov alebo odhlásenie
+					z odberu oznámení od nás alebo tretích strán vedie k vymazaniu údajov len v našej databáze
+					na účely správy budúcich oznámení od nás a tretích strán. Takýmto vymazaním sa neodstránia
+					už zhromaždené Osobné údaje, ktoré mohli byť sprístupnené tretím stranám v súlade s vyššie
+					uvedenými ustanoveniami týchto Zásad. Ak chcete vymazať Osobné údaje, ktoré tretie strany
+					môžu používať na to, aby vás priamo kontaktovali, obráťte sa na tieto tretie strany.</p>
+			</article>
+
+			
+			<article>
+				<h3>9. KONTAKTNÉ ÚDAJE</h3>
+				<p>Uvítame vaše pripomienky k týmto Zásadám ochrany osobných údajov. Ak máte otázky, chcete získať
+					prístup k svojim Osobným údajom, aby ste ich mohli opraviť alebo aktualizovať, a/alebo sa
+					domnievate, že sme tieto Zásady nedodržali, kontaktujte nás e-mailom na adrese support@wellnence.com.</p>
+			</article>
+
+		</main>
+	</div>
+	<footer>
+		<section class="ft-main ">
+			<div class="ft-main-item side footer-menu">
+				<h2 class="ft-title">Menu</h2>
+				<ul>
+					<li><a href="/?page=policy">Zásady ochrany osobných údajov</a></li>
+					<li><a href="/?page=terms">Obchodné podmienky</a></li>
+					<li><a href="/?page=contactUs">Kontaktujte nás</a></li>
+				</ul>
+			</div>
+
+			<div class="ft-main-item" id="main-item">
+				<a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+			
+			</div>
+
+			<div class="ft-main-item side footer-contact">
+				<h2 class="ft-title">Kontaktujte nás</h2>
+				<ul>
+					<li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
+							viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+							<g>
+								<g>
+									<polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+								</g>
+							</g>
+							<g>
+								<g>
+									<polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path
+										d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z">
+									</path>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
+								</g>
+							</g>
+						</svg>
+						<a href="mailto:support@wellnence.com">support@wellnence.com</a>
+					</li>
+			
+				</ul>
+			</div>
+		</section>
+		<p>© 2024 wellnence.com. Všetky práva vyhradené.</p>
+	</footer>
+	<script src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
